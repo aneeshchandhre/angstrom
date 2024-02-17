@@ -1,3 +1,67 @@
 body {
     background: none;
 }
+.landing_wrapper {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .landing_content {
+        width: 400px;
+        padding: 25px 30px;
+        background: #fff;
+        box-shadow: 2px 5px 20px #33333329;
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+    }
+}
+.landing_logo_wrapp {
+    text-align: center;
+    margin: 0 0 20px;
+}
+.form-group {
+    display: flex;
+    margin: 0 0 15px;
+    align-items: stretch;
+    flex-direction: column;
+    justify-content: flex-start;
+    label {
+        margin: 0;
+        line-height: 15px;
+        font-size: 15px;
+    }
+    .form-control {
+        border-radius: 0;
+        border: none;
+        border-bottom: 1px solid #dee2e6;
+        padding: 0;
+        height: 35px;
+    }
+}
+.remember_forgot {
+    display: flex;
+    margin: 0 0 15px;
+    align-items: center;
+    justify-content: space-between;
+    .remember_wrap, .forgot_wrapp {
+        font-size: 13px;
+    }
+}
+.btn-primary {
+    background: #d20f10;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 30px;
+    font-size: 14px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    &:hover {
+        background: #8e0000;
+    }
+}
