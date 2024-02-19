@@ -9,7 +9,7 @@ const LoginPage = () => {
         <div className='landing_logo_wrapp'>
           <Image
             src="/img/logo.svg"
-            alt="Vercel Logo"
+            alt="Angstrom Logo"
             className='landing_logo'
             width={100}
             height={100}
@@ -20,10 +20,12 @@ const LoginPage = () => {
           <div className='form-group'>
             <label htmlFor='username'>Username</label>
             <input type='text' name='username' className='form-control' required />
+            <span className='form_error'>Username Error</span>
           </div>
           <div className='form-group'>
             <label htmlFor='password'>Password</label>
             <input type='password' name='password' className='form-control' required />
+            <span className='form_error'>Password Error</span>
           </div>
           <div className='remember_forgot'>
             <div className='remember_wrap'>

@@ -20,6 +20,7 @@ const ForgotPage = () => {
           <div className='form-group'>
             <label htmlFor='email'>Email</label>
             <input type='text' name='email' className='form-control' required />
+            <span className='form_error'>Please enter your Email</span>
           </div>
           <div className='text-center'>
             <button className='btn btn-primary'>Submit</button>
