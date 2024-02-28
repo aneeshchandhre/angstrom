@@ -3,9 +3,9 @@ import { useRouter } from 'next/router';
 import React from 'react';
 import MUIDataTable from "mui-datatables";
 import Button from "@mui/material/Button";
-
-
-
+import Link from 'next/link';
+import Footer from '@/components/layout/footer';
+import Header from '@/components/layout/header';
 
 const UserList = () => {
   
@@ -105,16 +105,19 @@ const UserList = () => {
   
   return (
     <div>
-
-       <div className="container">
-
-      <MUIDataTable
-      title={"Employee List"}
-      data={data}
-      columns={columns}
-      options={options}
-    />
-       </div>
+      <Header />
+      <div className="container">
+        <div className='page_wrapp'>
+          <div className='pageHeadingArea'>
+              <div className='breadcrumb_wrapp'>
+                  <Link href="./masterData">User</Link> <span>Employee List</span>
+              </div>
+              {/* <h2 className='page_heading'>Employee List</h2> */}
+          </div>
+          <MUIDataTable title={"Employee List"} data={data} columns={columns} options={options} />
+          </div>
+      </div>
+       <Footer />
     </div>
   );
 };

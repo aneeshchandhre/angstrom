@@ -339,3 +339,33 @@ nav {
         min-height: 100px;
     }
 }
+
+// BOF Data Table CSS
+.css-2ulfj5-MuiTypography-root {
+    font-weight: 500;
+    font-size: 20px;
+}
+.css-1ygcj2i-MuiTableCell-root, .css-1ex1afd-MuiTableCell-root {
+    padding: 5px 15px;
+}
+.tss-1fbujeu-MUIDataTableHeadCell-toolButton {
+    padding: 0 8px;
+}
+.tss-1fbujeu-MUIDataTableHeadCell-toolButton {
+    font-weight: 600;
+    color: #666;
+    font-size: 12px;
+}
+.css-sghohy-MuiButtonBase-root-MuiButton-root, .css-zcbmsk-MuiButtonBase-root-MuiButton-root {
+    padding: 3px 10px;
+    font-size: 10px;
+    margin: 0 5px;
+    border: none;
+}
+.css-pdct74-MuiTablePagination-selectLabel, .css-levciy-MuiTablePagination-displayedRows {
+    margin: 0;
+}
+.css-zylse7-MuiButtonBase-root-MuiIconButton-root.Mui-disabled {
+    padding: 0;
+}
+// EOF Data Table CSS
