@@ -35,7 +35,7 @@ const LoginPage = () => {
               <Link href="/landing/forgot">Forgot Password?</Link>
             </div>
           </div>
-          <div className='text-center'>
+          <div className='text-center mt-3'>
             <button className='btn btn-primary'>Submit</button>
           </div>
         </form>
