@@ -35,6 +35,7 @@ const UserList = () => {
           <Button
             variant="contained"
             color="primary"
+            className='table_btns edit_icon'
             onClick={() => handleEditUser(tableMeta.rowData)}
           >
             Edit
@@ -42,6 +43,7 @@ const UserList = () => {
           <Button
             variant="contained"
             color="secondary"
+            className='table_btns delete_icon'
             onClick={() => handleDeleteUser(tableMeta.rowData)}
           >
             Delete
@@ -74,7 +76,7 @@ const UserList = () => {
 
     customToolbar: () => {
       return (
-        <Button variant="contained" color="primary" onClick={userCreate}>
+        <Button variant="contained" color="primary" className="table_btns create_btn" onClick={userCreate}>
           Create User
         </Button>
       );

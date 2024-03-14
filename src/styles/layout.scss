@@ -360,11 +360,40 @@ nav {
     color: #666;
     font-size: 12px;
 }
-.css-sghohy-MuiButtonBase-root-MuiButton-root, .css-zcbmsk-MuiButtonBase-root-MuiButton-root {
-    padding: 3px 10px;
+// .css-sghohy-MuiButtonBase-root-MuiButton-root, .css-zcbmsk-MuiButtonBase-root-MuiButton-root {
+//     padding: 3px 10px;
+//     font-size: 10px;
+//     margin: 0 5px;
+//     border: none;
+// }
+.table_btns {
+    position: relative;
+    padding: 3px 10px 3px 20px;
     font-size: 10px;
     margin: 0 5px;
     border: none;
+    text-transform: none;
+    &::before {
+        position: absolute;
+        content: "";
+        left: 5px;
+        top: 0;
+        bottom: 0;
+        width: 10px;
+        height: 100%;
+    }
+}
+.create_btn::before {
+    background: url(../../public/img/icons/add_icon.svg) center center no-repeat;
+    background-size: contain;
+}
+.edit_icon::before {
+    background: url(../../public/img/icons/edit_icon.svg) center center no-repeat;
+    background-size: contain;
+}
+.delete_icon::before {
+    background: url(../../public/img/icons/delete_icon.svg) center center no-repeat;
+    background-size: contain;
 }
 .css-pdct74-MuiTablePagination-selectLabel, .css-levciy-MuiTablePagination-displayedRows {
     margin: 0;
@@ -417,4 +446,83 @@ nav {
 }
 .btnRightArrow {
     margin: -2px 0 0 5px;
+}
+.horizontal-form-group {
+    display: flex;
+    margin: 0 0 5px;
+    align-items: center;
+    justify-content: space-between;
+    .form-label {
+        margin: 0;
+        font-size: 12px;
+        padding: 0 10px 0 0;
+    }
+    .form-control {
+        width: auto;
+    }
+}
+.formCardMain {
+    border: 1px solid rgb(0 0 0 / 10%);
+    box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    margin: 0 0 10px;
+    overflow: hidden;
+}
+.formCardWithJead {
+    padding: 0;
+    form {
+        padding: 15px;
+    }
+}
+.formCardHeading {
+    background: #64A4AF;
+    color: #fff;
+    padding: 7px 15px;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.4px;
+}
+.verticalForm {
+    gap: 10px;
+    display: flex;
+    padding: 5px 10px 15px;
+    align-items: flex-start;
+    justify-content: space-between;
+    .verticalFormSingle {
+        flex-grow: 1;
+        form {
+            padding: 0;
+            .form-group {
+                margin: 0;
+                .form-label {
+                    font-size: 12px;
+                }
+                .form-control {
+                    margin: 0 0 5px;
+                }
+            }
+        }
+    }
+}
+.saveWrapper {
+    background: rgb(243 248 255 / 75%);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+    right: 0;
+    text-align: right;
+    padding: 10px 15px;
+    button {
+        background: #025B7D;
+        padding: 6px 15px;
+        font-size: 13px;
+        border-radius: 13px;
+        min-width: 100px;
+    }
 }
