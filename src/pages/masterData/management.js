@@ -24,7 +24,7 @@ const management = () => {
                     <div className='formCardMain'>
                         <Form onSubmit="">
                             <Row>
-                                <Col md={3}>
+                                <Col xl={3} lg={6} md={6}>
                                     <Form.Group controlId="companyCode" className='form-group horizontal-form-group'>
                                         <Form.Label>Part No.</Form.Label>
                                         <Form.Control {...register('companyCode', { required: 'Company Code is required' })} />
@@ -66,7 +66,7 @@ const management = () => {
                                         {errors.username && <Form.Text className="text-danger">{errors.username.message}</Form.Text>}
                                     </Form.Group>
                                 </Col>
-                                <Col md={3}>
+                                <Col xl={3} lg={6} md={6}>
                                     <Form.Group controlId="companyCode" className='form-group horizontal-form-group'>
                                         <Form.Label>Part Description</Form.Label>
                                         <Form.Control {...register('companyCode', { required: 'Company Code is required' })} />
@@ -108,7 +108,7 @@ const management = () => {
                                         {errors.username && <Form.Text className="text-danger">{errors.username.message}</Form.Text>}
                                     </Form.Group>
                                 </Col>
-                                <Col md={3}>
+                                <Col xl={3} lg={6} md={6}>
                                     <Form.Group controlId="companyCode" className='form-group horizontal-form-group'>
                                         <Form.Label>REVLevel</Form.Label>
                                         <Form.Control {...register('companyCode', { required: 'Company Code is required' })} />
@@ -150,7 +150,7 @@ const management = () => {
                                         {errors.username && <Form.Text className="text-danger">{errors.username.message}</Form.Text>}
                                     </Form.Group>
                                 </Col>
-                                <Col md={3}>
+                                <Col xl={3} lg={6} md={6}>
                                     <Form.Group controlId="companyCode" className='form-group horizontal-form-group'>
                                         <Form.Label>REV Date</Form.Label>
                                         <Form.Control {...register('companyCode', { required: 'Company Code is required' })} />
@@ -194,21 +194,13 @@ const management = () => {
                                 </Col>
                             </Row>
                         </Form>
-                        <div className='row'>
-                            <div className='col-lg-3'>
-
-                            </div>
-                            <div className='col-lg-3'></div>
-                            <div className='col-lg-3'></div>
-                            <div className='col-lg-3'></div>
-                        </div>
                     </div>
 
                     <div className='formCardMain formCardWithJead'>
                         <div className='formCardHeading'>Raw material Pricing</div>
                         <Form onSubmit="">
                             <Row>
-                                <Col md={3}>
+                                <Col xl={3} lg={6} md={6}>
                                     <Form.Group controlId="companyCode" className='form-group horizontal-form-group'>
                                         <Form.Label>Base Material Cost ($LB)</Form.Label>
                                         <Form.Control {...register('companyCode', { required: 'Company Code is required' })} />
@@ -230,7 +222,7 @@ const management = () => {
                                         {errors.username && <Form.Text className="text-danger">{errors.username.message}</Form.Text>}
                                     </Form.Group>
                                 </Col>
-                                <Col md={3}>
+                                <Col xl={3} lg={6} md={6}>
                                     <Form.Group controlId="companyCode" className='form-group horizontal-form-group'>
                                         <Form.Label>Purch Matl Cost $/PC</Form.Label>
                                         <Form.Control {...register('companyCode', { required: 'Company Code is required' })} />
@@ -252,7 +244,7 @@ const management = () => {
                                         {errors.username && <Form.Text className="text-danger">{errors.username.message}</Form.Text>}
                                     </Form.Group>
                                 </Col>
-                                <Col md={3}>
+                                <Col xl={3} lg={6} md={6}>
                                     <Form.Group controlId="companyCode" className='form-group horizontal-form-group'>
                                         <Form.Label>Min QTY (Setup)</Form.Label>
                                         <Form.Control {...register('companyCode', { required: 'Company Code is required' })} />
@@ -274,7 +266,7 @@ const management = () => {
                                         {errors.username && <Form.Text className="text-danger">{errors.username.message}</Form.Text>}
                                     </Form.Group>
                                 </Col>
-                                <Col md={3}>
+                                <Col xl={3} lg={6} md={6}>
                                     <Form.Group controlId="companyCode" className='form-group horizontal-form-group'>
                                         <Form.Label>Proto Lead time</Form.Label>
                                         <Form.Control {...register('companyCode', { required: 'Company Code is required' })} />

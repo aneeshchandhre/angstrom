@@ -532,3 +532,17 @@ nav {
         min-width: 100px;
     }
 }
+
+@media (max-width: 1399px) {
+    .verticalForm .verticalFormSingle form .form-group .form-label {
+        min-height: 31px;
+    }
+}
+@media (max-width: 991px) {
+    .verticalForm {
+        flex-wrap: wrap;
+        .verticalFormSingle {
+            width: 15%;
+        }
+    }
+}
