@@ -75,16 +75,22 @@ body {
         font-size: 13px;
     }
 }
-.btn-primary {
-    background: #d20f10;
+.btn {
     border: none;
-    padding: 10px 30px;
+    padding: 6px 25px;
+    font-size: 13px;
     border-radius: 30px;
-    font-size: 14px;
     -webkit-border-radius: 30px;
     -moz-border-radius: 30px;
     -ms-border-radius: 30px;
     -o-border-radius: 30px;
+    &:hover, &:focus, &:visited {
+        border: none;
+        box-shadow: none;
+    }
+}
+.btn-primary {
+    background: #d20f10;
     &:hover {
         background: #8e0000;
     }

@@ -14,7 +14,7 @@ const CreateUserForm = () => {
     <Form onSubmit={handleSubmit(onSubmit)}>
       <Row>
         <Col md={6}>
-          <Form.Group controlId="username">
+          <Form.Group controlId="username" className='form-group'>
             <Form.Label>Username</Form.Label>
             <Form.Control {...register('username', { required: 'Username is required' })} />
             {errors.username && <Form.Text className="text-danger">{errors.username.message}</Form.Text>}
@@ -22,7 +22,7 @@ const CreateUserForm = () => {
         </Col>
 
         <Col md={6}>
-          <Form.Group controlId="email">
+          <Form.Group controlId="email" className='form-group'>
             <Form.Label>Email</Form.Label>
             <Form.Control {...register('email', { required: 'Email is required' })} />
             {errors.email && <Form.Text className="text-danger">{errors.email.message}</Form.Text>}
@@ -32,7 +32,7 @@ const CreateUserForm = () => {
 
       <Row>
   <Col md={6}>
-    <Form.Group controlId="first_name">
+    <Form.Group controlId="first_name" className='form-group'>
       <Form.Label>First Name</Form.Label>
       <Form.Control {...register('first_name', { required: 'First Name is required' })} />
       {errors.first_name && <Form.Text className="text-danger">{errors.first_name.message}</Form.Text>}
@@ -40,7 +40,7 @@ const CreateUserForm = () => {
   </Col>
 
   <Col md={6}>
-    <Form.Group controlId="last_name">
+    <Form.Group controlId="last_name" className='form-group'>
       <Form.Label>Last Name</Form.Label>
       <Form.Control {...register('last_name', { required: 'Last Name is required' })} />
       {errors.last_name && <Form.Text className="text-danger">{errors.last_name.message}</Form.Text>}
@@ -49,14 +49,14 @@ const CreateUserForm = () => {
 </Row>
 <Row>
 <Col md={6}>
-    <Form.Group controlId="address">
+    <Form.Group controlId="address" className='form-group'>
       <Form.Label>Address</Form.Label>
       <Form.Control as="textarea" rows={3} {...register('address', { required: 'Address is required' })} />
       {errors.address && <Form.Text className="text-danger">{errors.address.message}</Form.Text>}
     </Form.Group>
   </Col>
   <Col md={6}>
-    <Form.Group controlId="phone_number">
+    <Form.Group controlId="phone_number" className='form-group'>
       <Form.Label>Phone Number</Form.Label>
       <Form.Control {...register('phone_number', { required: 'Phone Number is required' })} />
       {errors.phone_number && <Form.Text className="text-danger">{errors.phone_number.message}</Form.Text>}
@@ -66,7 +66,7 @@ const CreateUserForm = () => {
 
       <Row>
         <Col md={6}>
-          <Form.Group controlId="role">
+          <Form.Group controlId="role" className='form-group'>
             <Form.Label>Role</Form.Label>
             <Form.Control as="select" {...register('role', { required: 'Role is required' })}>
               <option value="">Select Role</option>
@@ -79,7 +79,7 @@ const CreateUserForm = () => {
         </Col>
 
         <Col md={6}>
-          <Form.Group controlId="status">
+          <Form.Group controlId="status" className='form-group'>
             <Form.Label>Status</Form.Label>
             <Form.Control as="select" {...register('status', { required: 'Status is required' })}>
               <option value="">Select Status</option>
