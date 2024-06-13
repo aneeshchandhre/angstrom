@@ -292,6 +292,157 @@ const management = () => {
                         </Form>
                     </div>
                     <div className='formCardMain formCardWithJead'>
+                        <div className='formCardHeading'>Purchased Components</div>
+                        <div className='verticalForm'>
+                            <div className='verticalFormSingle'>
+                                <Form onSubmit="">
+                                    <Form.Group controlId="companyCode" className='form-group'>
+                                        <Form.Label>Part No.</Form.Label>
+                                        <Form.Control {...register('companyCode', { required: 'Company Code is required' })} />
+                                        {errors.username && <Form.Text className="text-danger">{errors.username.message}</Form.Text>}
+                                        <Form.Control {...register('companyCode', { required: 'Company Code is required' })} />
+                                        {errors.username && <Form.Text className="text-danger">{errors.username.message}</Form.Text>}
+                                        <Form.Control {...register('companyCode', { required: 'Company Code is required' })} />
+                                        {errors.username && <Form.Text className="text-danger">{errors.username.message}</Form.Text>}
+                                    </Form.Group>
+                                </Form>
+                            </div>
+                            <div className='verticalFormSingle'>
+                                <Form onSubmit="">
+                                    <Form.Group controlId="companyCode" className='form-group'>
+                                        <Form.Label>Part Description</Form.Label>
+                                        <Form.Control {...register('companyCode', { required: 'Company Code is required' })} />
+                                        {errors.username && <Form.Text className="text-danger">{errors.username.message}</Form.Text>}
+                                        <Form.Control {...register('companyCode', { required: 'Company Code is required' })} />
+                                        {errors.username && <Form.Text className="text-danger">{errors.username.message}</Form.Text>}
+                                        <Form.Control {...register('companyCode', { required: 'Company Code is required' })} />
+                                        {errors.username && <Form.Text className="text-danger">{errors.username.message}</Form.Text>}
+                                    </Form.Group>
+                                </Form>
+                            </div>
+                            <div className='verticalFormSingle'>
+                                <Form onSubmit="">
+                                    <Form.Group controlId="companyCode" className='form-group'>
+                                        <Form.Label>Net Wt. (Ib)</Form.Label>
+                                        <Form.Control {...register('companyCode', { required: 'Company Code is required' })} />
+                                        {errors.username && <Form.Text className="text-danger">{errors.username.message}</Form.Text>}
+                                        <Form.Control {...register('companyCode', { required: 'Company Code is required' })} />
+                                        {errors.username && <Form.Text className="text-danger">{errors.username.message}</Form.Text>}
+                                        <Form.Control {...register('companyCode', { required: 'Company Code is required' })} />
+                                        {errors.username && <Form.Text className="text-danger">{errors.username.message}</Form.Text>}
+                                    </Form.Group>
+                                </Form>
+                            </div>
+                            <div className='verticalFormSingle'>
+                                <Form onSubmit="">
+                                    <Form.Group controlId="companyCode" className='form-group'>
+                                        <Form.Label>Gross Wt. (Ib)</Form.Label>
+                                        <Form.Control {...register('companyCode', { required: 'Company Code is required' })} />
+                                        {errors.username && <Form.Text className="text-danger">{errors.username.message}</Form.Text>}
+                                        <Form.Control {...register('companyCode', { required: 'Company Code is required' })} />
+                                        {errors.username && <Form.Text className="text-danger">{errors.username.message}</Form.Text>}
+                                        <Form.Control {...register('companyCode', { required: 'Company Code is required' })} />
+                                        {errors.username && <Form.Text className="text-danger">{errors.username.message}</Form.Text>}
+                                    </Form.Group>
+                                </Form>
+                            </div>
+                            <div className='verticalFormSingle'>
+                                <Form onSubmit="">
+                                    <Form.Group controlId="companyCode" className='form-group'>
+                                        <Form.Label>Piece Price($)</Form.Label>
+                                        <Form.Control {...register('companyCode', { required: 'Company Code is required' })} />
+                                        {errors.username && <Form.Text className="text-danger">{errors.username.message}</Form.Text>}
+                                        <Form.Control {...register('companyCode', { required: 'Company Code is required' })} />
+                                        {errors.username && <Form.Text className="text-danger">{errors.username.message}</Form.Text>}
+                                        <Form.Control {...register('companyCode', { required: 'Company Code is required' })} />
+                                        {errors.username && <Form.Text className="text-danger">{errors.username.message}</Form.Text>}
+                                    </Form.Group>
+                                </Form>
+                            </div>
+                            <div className='verticalFormSingle'>
+                                <Form onSubmit="">
+                                    <Form.Group controlId="companyCode" className='form-group'>
+                                        <Form.Label>Pieces / Assy</Form.Label>
+                                        <Form.Control {...register('companyCode', { required: 'Company Code is required' })} />
+                                        {errors.username && <Form.Text className="text-danger">{errors.username.message}</Form.Text>}
+                                        <Form.Control {...register('companyCode', { required: 'Company Code is required' })} />
+                                        {errors.username && <Form.Text className="text-danger">{errors.username.message}</Form.Text>}
+                                        <Form.Control {...register('companyCode', { required: 'Company Code is required' })} />
+                                        {errors.username && <Form.Text className="text-danger">{errors.username.message}</Form.Text>}
+                                    </Form.Group>
+                                </Form>
+                            </div>
+                            <div className='verticalFormSingle'>
+                                <Form onSubmit="">
+                                    <Form.Group controlId="companyCode" className='form-group'>
+                                        <Form.Label>Mark Up</Form.Label>
+                                        <Form.Control {...register('companyCode', { required: 'Company Code is required' })} />
+                                        {errors.username && <Form.Text className="text-danger">{errors.username.message}</Form.Text>}
+                                        <Form.Control {...register('companyCode', { required: 'Company Code is required' })} />
+                                        {errors.username && <Form.Text className="text-danger">{errors.username.message}</Form.Text>}
+                                        <Form.Control {...register('companyCode', { required: 'Company Code is required' })} />
+                                        {errors.username && <Form.Text className="text-danger">{errors.username.message}</Form.Text>}
+                                    </Form.Group>
+                                </Form>
+                            </div>
+                            <div className='verticalFormSingle'>
+                                <Form onSubmit="">
+                                    <Form.Group controlId="companyCode" className='form-group'>
+                                        <Form.Label>3%</Form.Label>
+                                        <Form.Control {...register('companyCode', { required: 'Company Code is required' })} />
+                                        {errors.username && <Form.Text className="text-danger">{errors.username.message}</Form.Text>}
+                                        <Form.Control {...register('companyCode', { required: 'Company Code is required' })} />
+                                        {errors.username && <Form.Text className="text-danger">{errors.username.message}</Form.Text>}
+                                        <Form.Control {...register('companyCode', { required: 'Company Code is required' })} />
+                                        {errors.username && <Form.Text className="text-danger">{errors.username.message}</Form.Text>}
+                                    </Form.Group>
+                                </Form>
+                            </div>
+                            <div className='verticalFormSingle'>
+                                <Form onSubmit="">
+                                    <Form.Group controlId="companyCode" className='form-group'>
+                                        <Form.Label>Freight/Pc</Form.Label>
+                                        <Form.Control {...register('companyCode', { required: 'Company Code is required' })} />
+                                        {errors.username && <Form.Text className="text-danger">{errors.username.message}</Form.Text>}
+                                        <Form.Control {...register('companyCode', { required: 'Company Code is required' })} />
+                                        {errors.username && <Form.Text className="text-danger">{errors.username.message}</Form.Text>}
+                                        <Form.Control {...register('companyCode', { required: 'Company Code is required' })} />
+                                        {errors.username && <Form.Text className="text-danger">{errors.username.message}</Form.Text>}
+                                    </Form.Group>
+                                </Form>
+                            </div>
+                            <div className='verticalFormSingle'>
+                                <Form onSubmit="">
+                                    <Form.Group controlId="companyCode" className='form-group'>
+                                        <Form.Label>Price</Form.Label>
+                                        <Form.Control {...register('companyCode', { required: 'Company Code is required' })} />
+                                        {errors.username && <Form.Text className="text-danger">{errors.username.message}</Form.Text>}
+                                        <Form.Control {...register('companyCode', { required: 'Company Code is required' })} />
+                                        {errors.username && <Form.Text className="text-danger">{errors.username.message}</Form.Text>}
+                                        <Form.Control {...register('companyCode', { required: 'Company Code is required' })} />
+                                        {errors.username && <Form.Text className="text-danger">{errors.username.message}</Form.Text>}
+                                    </Form.Group>
+                                </Form>
+                            </div>
+                            <div className='verticalFormSingle'>
+                                <Form onSubmit="">
+                                    <Form.Group controlId="companyCode" className='form-group'>
+                                        <Form.Label>Notes/Comments</Form.Label>
+                                        <Form.Control {...register('companyCode', { required: 'Company Code is required' })} />
+                                        {errors.username && <Form.Text className="text-danger">{errors.username.message}</Form.Text>}
+                                        <Form.Control {...register('companyCode', { required: 'Company Code is required' })} />
+                                        {errors.username && <Form.Text className="text-danger">{errors.username.message}</Form.Text>}
+                                        <Form.Control {...register('companyCode', { required: 'Company Code is required' })} />
+                                        {errors.username && <Form.Text className="text-danger">{errors.username.message}</Form.Text>}
+                                    </Form.Group>
+                                </Form>
+                            </div>
+                        </div>
+                        <div className='addRowTotalPurchase'>
+                            <button className='addRowBtn'>Add Row</button>
+                        </div>
+                    </div>
+                    <div className='formCardMain formCardWithJead'>
                         <div className='formCardHeading'>Process Cost</div>
                         <div className='verticalForm'>
                             <div className='verticalFormSingle'>

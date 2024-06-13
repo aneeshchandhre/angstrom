@@ -2,6 +2,7 @@ import "bootstrap/dist/css/bootstrap.css";
 import "@/styles/globals.css";
 import "@/styles/layout.scss";
 import "@/styles/responsive.scss";
+import "@/styles/workSheet.scss";
 
 import {Inter} from 'next/font/google';
 
