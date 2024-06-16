@@ -18,6 +18,10 @@ const WorkSheetData = () => {
             {/* <h2 className='page_heading'>Worksheet</h2> */}
             <div className="worksheetMain">
               <div className="worksheetSingle">
+                <div className="worksheetHeader">
+                  <h2 className='page_heading'>Heading</h2>
+                  <button className="saveBtn">Save</button>
+                </div>
                 <table className="table worksheetTable">
                   <tbody>
                     <tr>
@@ -60,7 +64,7 @@ const WorkSheetData = () => {
                     </tr>
                     <tr>
                       <td className="labelArea minTD">Contact Name:</td>
-                      <td className="labelArea maxTD">
+                      <td className="labelArea maxTD selectTd">
                         <Form.Group
                           controlId="partNumber"
                           className="form-group"
@@ -165,7 +169,7 @@ const WorkSheetData = () => {
                         </Form.Group>
                         </td>
                       <td className="labelArea minTD">Quote Date:</td>
-                      <td className="labelArea maxTD">
+                      <td className="labelArea maxTD dateTd">
                         <Form.Group controlId="flcaDate" className='form-group'>
                           <Form.Control type="date" />
                         </Form.Group>
@@ -211,7 +215,7 @@ const WorkSheetData = () => {
                         </Form.Group>
                       </td>
                       <td className="labelArea minTD">SOP:</td>
-                      <td className="labelArea maxTD">
+                      <td className="labelArea maxTD dateTd">
                         <Form.Group controlId="flcaDate" className='form-group'>
                           <Form.Control type="date" />
                         </Form.Group>
@@ -283,7 +287,7 @@ const WorkSheetData = () => {
                     </tr>
                     <tr>
                       <td className="labelArea minTD">Inquiry Date:</td>
-                      <td className="labelArea maxTD">
+                      <td className="labelArea maxTD dateTd">
                         <Form.Group controlId="flcaDate" className='form-group'>
                           <Form.Control type="date" />
                         </Form.Group>
@@ -338,7 +342,10 @@ const WorkSheetData = () => {
               </div>
             
               <div className="worksheetSingle">
-                <h2 className='page_heading'>Raw Material Pricing</h2>
+                <div className="worksheetHeader">
+                  <h2 className='page_heading'>Raw Material Pricing</h2>
+                  <button className="saveBtn">Save</button>
+                </div>
                 <table className="table worksheetTable">
                   <tbody>
                     <tr>

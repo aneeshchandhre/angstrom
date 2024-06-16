@@ -15,12 +15,69 @@
 }
 .worksheetTable {
     margin: 0;
+    border: 2px solid #989898;
     tr {
         td {
             border: 1px solid #ddd;
+            border-bottom-color: #999;
             font-size: 12px;
             vertical-align: middle;
-            padding: 5px;
+            padding: 5px 10px;
+            &:nth-child(even) {
+                background: #DEEBF6;
+                border-right: 2px solid #989898;
+            }
+            .form-control {
+                background: none;
+                border-color: #e4e4e4;
+                height: auto;
+                border: none;
+                padding: 0;
+            }
+        }
+        td.selectTd {
+            background: #025b7d;
+            .form-group {
+                position: relative;
+                &::before, &::after {
+                    position: absolute;
+                    content: "";
+                    pointer-events: none;
+                }
+                &::before {
+                    background: #025b7d;
+                    top: 0;
+                    right: 0;
+                    bottom: 0;
+                    height: 100%;
+                    width: 30px;
+                }
+                &::after {
+                    width: 12px;
+                    height: 12px;
+                    right: 0;
+                    top: 0px;
+                    border: 2px solid transparent;
+                    border-right-color: #fff;
+                    border-bottom-color: #fff;
+                    transform: rotate(45deg);
+                    -webkit-transform: rotate(45deg);
+                    -moz-transform: rotate(45deg);
+                    -ms-transform: rotate(45deg);
+                    -o-transform: rotate(45deg);
+                    border-radius: 3px;
+                    -webkit-border-radius: 3px;
+                    -moz-border-radius: 3px;
+                    -ms-border-radius: 3px;
+                    -o-border-radius: 3px;
+                }
+                select.form-control {
+                    color: #fff;
+                }
+            }
+        }
+        td.dateTd {
+            background: #9cccf2;
         }
     }
 }
@@ -40,4 +97,27 @@
 
 .worksheetTable .form-group {
     margin: 0;
+}
+
+.worksheetHeader {
+    display: flex;
+    margin: 0 0 15px;
+    align-items: center;
+    justify-content: space-between;
+    .page_heading {
+        margin: 0;
+    }
+}
+.saveBtn {
+    padding: 7px 20px;
+    border: none;
+    font-size: 14px;
+    text-transform: uppercase;
+    background: #025b7d;
+    color: #fff;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
 }
