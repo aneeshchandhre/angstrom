@@ -31,7 +31,7 @@ const WorkSheetData = () => {
                           controlId="companyCode"
                           className="form-group"
                         >
-                          <Form.Control value={"Front Lower Control arm"} />
+                          <Form.Control value={"Front Lower Control arm"} disabled />
                         </Form.Group>
                       </td>
                       <td className="labelArea minTD">Part #</td>
@@ -157,7 +157,7 @@ const WorkSheetData = () => {
                     </tr>
                     <tr>
                       <td className="labelArea minTD">Customer Name:</td>
-                      <td className="labelArea maxTD">
+                      <td className="labelArea maxTD autoPopulated">
                         <Form.Group controlId="companyCode" className="form-group">
                           <Form.Control value={"Emerald Automotive"} />
                         </Form.Group>
@@ -170,7 +170,7 @@ const WorkSheetData = () => {
                         </td>
                       <td className="labelArea minTD">Quote Date:</td>
                       <td className="labelArea maxTD dateTd">
-                        <Form.Group controlId="flcaDate" className='form-group'>
+                        <Form.Group controlId="flcaDate" className='form-group datePiker'>
                           <Form.Control type="date" />
                         </Form.Group>
                         </td>
@@ -183,7 +183,7 @@ const WorkSheetData = () => {
                     </tr>
                     <tr>
                       <td className="labelArea minTD">1 Endeavour Drive</td>
-                      <td className="labelArea maxTD">
+                      <td className="labelArea maxTD autoPopulated">
                         <Form.Group controlId="companyCode" className="form-group">
                           <Form.Control value={"1 Endeavour Drive"} />
                         </Form.Group>
@@ -209,14 +209,14 @@ const WorkSheetData = () => {
                     </tr>
                     <tr>
                       <td className="labelArea minTD">City, State, Country, Zip:</td>
-                      <td className="labelArea maxTD">
+                      <td className="labelArea maxTD autoPopulated">
                         <Form.Group controlId="companyCode" className="form-group">
                           <Form.Control value={"Basildon SS14 3WF"} />
                         </Form.Group>
                       </td>
                       <td className="labelArea minTD">SOP:</td>
                       <td className="labelArea maxTD dateTd">
-                        <Form.Group controlId="flcaDate" className='form-group'>
+                        <Form.Group controlId="flcaDate" className='form-group datePiker'>
                           <Form.Control type="date" />
                         </Form.Group>
                       </td>
@@ -235,7 +235,7 @@ const WorkSheetData = () => {
                     </tr>
                     <tr>
                       <td className="labelArea minTD">Contact Phone:</td>
-                      <td className="labelArea maxTD">
+                      <td className="labelArea maxTD autoPopulated">
                         <Form.Group controlId="companyCode" className="form-group">
                           <Form.Control value={"+44 1268 247900"} />
                         </Form.Group>
@@ -288,7 +288,7 @@ const WorkSheetData = () => {
                     <tr>
                       <td className="labelArea minTD">Inquiry Date:</td>
                       <td className="labelArea maxTD dateTd">
-                        <Form.Group controlId="flcaDate" className='form-group'>
+                        <Form.Group controlId="flcaDate" className='form-group datePiker'>
                           <Form.Control type="date" />
                         </Form.Group>
                       </td>

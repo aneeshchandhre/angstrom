@@ -24,7 +24,7 @@
             vertical-align: middle;
             padding: 5px 10px;
             &:nth-child(even) {
-                background: #DEEBF6;
+                background: #eef7ff;
                 border-right: 2px solid #989898;
             }
             .form-control {
@@ -32,8 +32,16 @@
                 border-color: #e4e4e4;
                 height: auto;
                 border: none;
-                padding: 0;
-            }
+                padding: 2px 7px;
+                font-size: 12px;
+                height: 28px;
+                border: 1px solid #c4c4c4;
+                border-radius: 4px;
+                -webkit-border-radius: 4px;
+                -moz-border-radius: 4px;
+                -ms-border-radius: 4px;
+                -o-border-radius: 4px;
+}
         }
         td.selectTd {
             background: #025b7d;
@@ -49,7 +57,7 @@
                     top: 0;
                     right: 0;
                     bottom: 0;
-                    height: 100%;
+                    height: calc(100% - 2px);
                     width: 30px;
                 }
                 &::after {
@@ -73,12 +81,28 @@
                 }
                 select.form-control {
                     color: #fff;
+                    border: none;
+                    background: none;
                 }
             }
         }
         td.dateTd {
             background: #9cccf2;
         }
+    }
+}
+.datePiker input.form-control {
+    border: none !important;
+}
+input[disabled] {
+    border: none !important;
+    opacity: 0.5 !important;
+}
+.autoPopulated {
+    background: #00709bd1 !important;
+    .form-control {
+        color: #fff;
+        border: none !important;
     }
 }
 .worksheetInput {
