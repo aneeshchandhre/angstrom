@@ -23,7 +23,7 @@ const WorkSheetData = () => {
                   <button className="saveBtn">Save</button>
                 </div>
                 <div className="table-responsive">
-                  <table className="table worksheetTable">
+                  <table className="worksheetTable">
                     <tbody>
                       <tr>
                         <td className="labelArea minTD">Part Description:</td>
@@ -349,7 +349,7 @@ const WorkSheetData = () => {
                   <button className="saveBtn">Save</button>
                 </div>
                 <div className="table-responsive">
-                  <table className="table worksheetTable">
+                  <table className="worksheetTable">
                     <tbody>
                       <tr>
                         <td className="labelArea minTD">Base Material Cost ($/Lb)</td>
