@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image"; 
 import Link from "next/link";
 import Footer from "@/components/layout/footer";
 import Header from "@/components/layout/header";
@@ -496,17 +497,17 @@ const WorkSheetData = () => {
                   <table className="verticalTable">
                     <thead>
                       <tr>
-                        <th>Part No.</th>
-                        <th>Part Description</th>
-                        <th>Nt. Wt (ib)</th>
-                        <th>Gross Wt. (ib)</th>
-                        <th>Piece Price ($)</th>
-                        <th>Pieces Assy</th>
-                        <th>Mark Up</th>
-                        <th>3%</th>
-                        <th>Freight/Pc</th>
-                        <th>Price</th>
-                        <th>Notes/Comments</th>
+                        <th className="min-column">Part No.</th>
+                        <th className="max-column">Part Description</th>
+                        <th className="min-column">Nt. Wt (ib)</th>
+                        <th className="min-column">Gross Wt. (ib)</th>
+                        <th className="min-column">Piece Price ($)</th>
+                        <th className="min-column">Pieces Assy</th>
+                        <th className="min-column">Mark Up</th>
+                        <th className="min-column">3%</th>
+                        <th className="min-column">Freight/Pc</th>
+                        <th className="min-column">Price</th>
+                        <th className="">Notes/Comments</th>
                       </tr>
                     </thead>
                     <tbody>
@@ -516,7 +517,7 @@ const WorkSheetData = () => {
                             controlId="companyCode"
                             className="form-group"
                           >
-                            <Form.Control defaultValue={"Front Lower Control arm"} disabled />
+                            <Form.Control defaultValue={""} disabled />
                           </Form.Group>
                         </td>
                         <td className="valueArea maxTD">
@@ -524,7 +525,15 @@ const WorkSheetData = () => {
                             controlId="companyCode"
                             className="form-group"
                           >
-                            <Form.Control defaultValue={"Front Lower Control arm"} disabled />
+                            <Form.Control defaultValue={""} />
+                          </Form.Group>
+                        </td>
+                        <td className="valueArea maxTD lightBlue">
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group"
+                          >
+                            <Form.Control defaultValue={""} />
                           </Form.Group>
                         </td>
                         <td className="valueArea maxTD">
@@ -532,7 +541,7 @@ const WorkSheetData = () => {
                             controlId="companyCode"
                             className="form-group"
                           >
-                            <Form.Control defaultValue={"Front Lower Control arm"} disabled />
+                            <Form.Control defaultValue={""} disabled />
                           </Form.Group>
                         </td>
                         <td className="valueArea maxTD">
@@ -540,7 +549,7 @@ const WorkSheetData = () => {
                             controlId="companyCode"
                             className="form-group"
                           >
-                            <Form.Control defaultValue={"Front Lower Control arm"} disabled />
+                            <Form.Control defaultValue={""} disabled />
                           </Form.Group>
                         </td>
                         <td className="valueArea maxTD">
@@ -548,7 +557,7 @@ const WorkSheetData = () => {
                             controlId="companyCode"
                             className="form-group"
                           >
-                            <Form.Control defaultValue={"Front Lower Control arm"} disabled />
+                            <Form.Control defaultValue={""} disabled />
                           </Form.Group>
                         </td>
                         <td className="valueArea maxTD">
@@ -556,7 +565,7 @@ const WorkSheetData = () => {
                             controlId="companyCode"
                             className="form-group"
                           >
-                            <Form.Control defaultValue={"Front Lower Control arm"} disabled />
+                            <Form.Control defaultValue={""} disabled />
                           </Form.Group>
                         </td>
                         <td className="valueArea maxTD">
@@ -564,7 +573,7 @@ const WorkSheetData = () => {
                             controlId="companyCode"
                             className="form-group"
                           >
-                            <Form.Control defaultValue={"Front Lower Control arm"} disabled />
+                            <Form.Control defaultValue={""} disabled />
                           </Form.Group>
                         </td>
                         <td className="valueArea maxTD">
@@ -572,7 +581,7 @@ const WorkSheetData = () => {
                             controlId="companyCode"
                             className="form-group"
                           >
-                            <Form.Control defaultValue={"Front Lower Control arm"} disabled />
+                            <Form.Control defaultValue={""} disabled />
                           </Form.Group>
                         </td>
                         <td className="valueArea maxTD">
@@ -580,7 +589,7 @@ const WorkSheetData = () => {
                             controlId="companyCode"
                             className="form-group"
                           >
-                            <Form.Control defaultValue={"Front Lower Control arm"} disabled />
+                            <Form.Control defaultValue={""} disabled />
                           </Form.Group>
                         </td>
                         <td className="valueArea maxTD">
@@ -588,106 +597,18 @@ const WorkSheetData = () => {
                             controlId="companyCode"
                             className="form-group"
                           >
-                            <Form.Control defaultValue={"Front Lower Control arm"} disabled />
+                            <Form.Control defaultValue={""} disabled />
                           </Form.Group>
-                        </td>
-                        <td className="valueArea maxTD">
-                          <Form.Group
-                            controlId="companyCode"
-                            className="form-group"
-                          >
-                            <Form.Control defaultValue={"Front Lower Control arm"} disabled />
-                          </Form.Group>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td className="valueArea maxTD">
-                          <Form.Group
-                            controlId="companyCode"
-                            className="form-group"
-                          >
-                            <Form.Control defaultValue={"Front Lower Control arm"} disabled />
-                          </Form.Group>
-                        </td>
-                        <td className="valueArea maxTD">
-                          <Form.Group
-                            controlId="companyCode"
-                            className="form-group"
-                          >
-                            <Form.Control defaultValue={"Front Lower Control arm"} disabled />
-                          </Form.Group>
-                        </td>
-                        <td className="valueArea maxTD">
-                          <Form.Group
-                            controlId="companyCode"
-                            className="form-group"
-                          >
-                            <Form.Control defaultValue={"Front Lower Control arm"} disabled />
-                          </Form.Group>
-                        </td>
-                        <td className="valueArea maxTD">
-                          <Form.Group
-                            controlId="companyCode"
-                            className="form-group"
-                          >
-                            <Form.Control defaultValue={"Front Lower Control arm"} disabled />
-                          </Form.Group>
-                        </td>
-                        <td className="valueArea maxTD">
-                          <Form.Group
-                            controlId="companyCode"
-                            className="form-group"
-                          >
-                            <Form.Control defaultValue={"Front Lower Control arm"} disabled />
-                          </Form.Group>
-                        </td>
-                        <td className="valueArea maxTD">
-                          <Form.Group
-                            controlId="companyCode"
-                            className="form-group"
-                          >
-                            <Form.Control defaultValue={"Front Lower Control arm"} disabled />
-                          </Form.Group>
-                        </td>
-                        <td className="valueArea maxTD">
-                          <Form.Group
-                            controlId="companyCode"
-                            className="form-group"
-                          >
-                            <Form.Control defaultValue={"Front Lower Control arm"} disabled />
-                          </Form.Group>
-                        </td>
-                        <td className="valueArea maxTD">
-                          <Form.Group
-                            controlId="companyCode"
-                            className="form-group"
-                          >
-                            <Form.Control defaultValue={"Front Lower Control arm"} disabled />
-                          </Form.Group>
-                        </td>
-                        <td className="valueArea maxTD">
-                          <Form.Group
-                            controlId="companyCode"
-                            className="form-group"
-                          >
-                            <Form.Control defaultValue={"Front Lower Control arm"} disabled />
-                          </Form.Group>
-                        </td>
-                        <td className="valueArea maxTD">
-                          <Form.Group
-                            controlId="companyCode"
-                            className="form-group"
-                          >
-                            <Form.Control defaultValue={"Front Lower Control arm"} disabled />
-                          </Form.Group>
-                        </td>
-                        <td className="valueArea maxTD">
-                          <Form.Group
-                            controlId="companyCode"
-                            className="form-group"
-                          >
-                            <Form.Control defaultValue={"Front Lower Control arm"} disabled />
-                          </Form.Group>
+                          <button className="trashIcon">
+                            <Image
+                                src="/img/trash.png"
+                                alt="Angstrom Logo"
+                                className='main_logo'
+                                width={18}
+                                height={18}
+                                priority
+                            />
+                          </button>
                         </td>
                       </tr>
                       <tr>
@@ -696,7 +617,7 @@ const WorkSheetData = () => {
                             controlId="companyCode"
                             className="form-group"
                           >
-                            <Form.Control defaultValue={"Front Lower Control arm"} disabled />
+                            <Form.Control defaultValue={""} disabled />
                           </Form.Group>
                         </td>
                         <td className="valueArea maxTD">
@@ -704,7 +625,7 @@ const WorkSheetData = () => {
                             controlId="companyCode"
                             className="form-group"
                           >
-                            <Form.Control defaultValue={"Front Lower Control arm"} disabled />
+                            <Form.Control defaultValue={""} disabled />
                           </Form.Group>
                         </td>
                         <td className="valueArea maxTD">
@@ -712,7 +633,7 @@ const WorkSheetData = () => {
                             controlId="companyCode"
                             className="form-group"
                           >
-                            <Form.Control defaultValue={"Front Lower Control arm"} disabled />
+                            <Form.Control defaultValue={""} disabled />
                           </Form.Group>
                         </td>
                         <td className="valueArea maxTD">
@@ -720,7 +641,7 @@ const WorkSheetData = () => {
                             controlId="companyCode"
                             className="form-group"
                           >
-                            <Form.Control defaultValue={"Front Lower Control arm"} disabled />
+                            <Form.Control defaultValue={""} disabled />
                           </Form.Group>
                         </td>
                         <td className="valueArea maxTD">
@@ -728,7 +649,7 @@ const WorkSheetData = () => {
                             controlId="companyCode"
                             className="form-group"
                           >
-                            <Form.Control defaultValue={"Front Lower Control arm"} disabled />
+                            <Form.Control defaultValue={""} disabled />
                           </Form.Group>
                         </td>
                         <td className="valueArea maxTD">
@@ -736,7 +657,7 @@ const WorkSheetData = () => {
                             controlId="companyCode"
                             className="form-group"
                           >
-                            <Form.Control defaultValue={"Front Lower Control arm"} disabled />
+                            <Form.Control defaultValue={""} disabled />
                           </Form.Group>
                         </td>
                         <td className="valueArea maxTD">
@@ -744,7 +665,7 @@ const WorkSheetData = () => {
                             controlId="companyCode"
                             className="form-group"
                           >
-                            <Form.Control defaultValue={"Front Lower Control arm"} disabled />
+                            <Form.Control defaultValue={""} disabled />
                           </Form.Group>
                         </td>
                         <td className="valueArea maxTD">
@@ -752,7 +673,7 @@ const WorkSheetData = () => {
                             controlId="companyCode"
                             className="form-group"
                           >
-                            <Form.Control defaultValue={"Front Lower Control arm"} disabled />
+                            <Form.Control defaultValue={""} disabled />
                           </Form.Group>
                         </td>
                         <td className="valueArea maxTD">
@@ -760,7 +681,7 @@ const WorkSheetData = () => {
                             controlId="companyCode"
                             className="form-group"
                           >
-                            <Form.Control defaultValue={"Front Lower Control arm"} disabled />
+                            <Form.Control defaultValue={""} disabled />
                           </Form.Group>
                         </td>
                         <td className="valueArea maxTD">
@@ -768,7 +689,7 @@ const WorkSheetData = () => {
                             controlId="companyCode"
                             className="form-group"
                           >
-                            <Form.Control defaultValue={"Front Lower Control arm"} disabled />
+                            <Form.Control defaultValue={""} disabled />
                           </Form.Group>
                         </td>
                         <td className="valueArea maxTD">
@@ -776,98 +697,18 @@ const WorkSheetData = () => {
                             controlId="companyCode"
                             className="form-group"
                           >
-                            <Form.Control defaultValue={"Front Lower Control arm"} disabled />
+                            <Form.Control defaultValue={""} disabled />
                           </Form.Group>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td className="valueArea maxTD">
-                          <Form.Group
-                            controlId="companyCode"
-                            className="form-group"
-                          >
-                            <Form.Control defaultValue={"Front Lower Control arm"} disabled />
-                          </Form.Group>
-                        </td>
-                        <td className="valueArea maxTD">
-                          <Form.Group
-                            controlId="companyCode"
-                            className="form-group"
-                          >
-                            <Form.Control defaultValue={"Front Lower Control arm"} disabled />
-                          </Form.Group>
-                        </td>
-                        <td className="valueArea maxTD">
-                          <Form.Group
-                            controlId="companyCode"
-                            className="form-group"
-                          >
-                            <Form.Control defaultValue={"Front Lower Control arm"} disabled />
-                          </Form.Group>
-                        </td>
-                        <td className="valueArea maxTD">
-                          <Form.Group
-                            controlId="companyCode"
-                            className="form-group"
-                          >
-                            <Form.Control defaultValue={"Front Lower Control arm"} disabled />
-                          </Form.Group>
-                        </td>
-                        <td className="valueArea maxTD">
-                          <Form.Group
-                            controlId="companyCode"
-                            className="form-group"
-                          >
-                            <Form.Control defaultValue={"Front Lower Control arm"} disabled />
-                          </Form.Group>
-                        </td>
-                        <td className="valueArea maxTD">
-                          <Form.Group
-                            controlId="companyCode"
-                            className="form-group"
-                          >
-                            <Form.Control defaultValue={"Front Lower Control arm"} disabled />
-                          </Form.Group>
-                        </td>
-                        <td className="valueArea maxTD">
-                          <Form.Group
-                            controlId="companyCode"
-                            className="form-group"
-                          >
-                            <Form.Control defaultValue={"Front Lower Control arm"} disabled />
-                          </Form.Group>
-                        </td>
-                        <td className="valueArea maxTD">
-                          <Form.Group
-                            controlId="companyCode"
-                            className="form-group"
-                          >
-                            <Form.Control defaultValue={"Front Lower Control arm"} disabled />
-                          </Form.Group>
-                        </td>
-                        <td className="valueArea maxTD">
-                          <Form.Group
-                            controlId="companyCode"
-                            className="form-group"
-                          >
-                            <Form.Control defaultValue={"Front Lower Control arm"} disabled />
-                          </Form.Group>
-                        </td>
-                        <td className="valueArea maxTD">
-                          <Form.Group
-                            controlId="companyCode"
-                            className="form-group"
-                          >
-                            <Form.Control defaultValue={"Front Lower Control arm"} disabled />
-                          </Form.Group>
-                        </td>
-                        <td className="valueArea maxTD">
-                          <Form.Group
-                            controlId="companyCode"
-                            className="form-group"
-                          >
-                            <Form.Control defaultValue={"Front Lower Control arm"} disabled />
-                          </Form.Group>
+                          <button className="trashIcon">
+                            <Image
+                                src="/img/trash.png"
+                                alt="Angstrom Logo"
+                                className='main_logo'
+                                width={18}
+                                height={18}
+                                priority
+                            />
+                          </button>
                         </td>
                       </tr>
                       <tr>
@@ -876,7 +717,7 @@ const WorkSheetData = () => {
                             controlId="companyCode"
                             className="form-group"
                           >
-                            <Form.Control defaultValue={"Front Lower Control arm"} disabled />
+                            <Form.Control defaultValue={""} disabled />
                           </Form.Group>
                         </td>
                         <td className="valueArea maxTD">
@@ -884,7 +725,7 @@ const WorkSheetData = () => {
                             controlId="companyCode"
                             className="form-group"
                           >
-                            <Form.Control defaultValue={"Front Lower Control arm"} disabled />
+                            <Form.Control defaultValue={""} disabled />
                           </Form.Group>
                         </td>
                         <td className="valueArea maxTD">
@@ -892,7 +733,7 @@ const WorkSheetData = () => {
                             controlId="companyCode"
                             className="form-group"
                           >
-                            <Form.Control defaultValue={"Front Lower Control arm"} disabled />
+                            <Form.Control defaultValue={""} disabled />
                           </Form.Group>
                         </td>
                         <td className="valueArea maxTD">
@@ -900,7 +741,7 @@ const WorkSheetData = () => {
                             controlId="companyCode"
                             className="form-group"
                           >
-                            <Form.Control defaultValue={"Front Lower Control arm"} disabled />
+                            <Form.Control defaultValue={""} disabled />
                           </Form.Group>
                         </td>
                         <td className="valueArea maxTD">
@@ -908,7 +749,7 @@ const WorkSheetData = () => {
                             controlId="companyCode"
                             className="form-group"
                           >
-                            <Form.Control defaultValue={"Front Lower Control arm"} disabled />
+                            <Form.Control defaultValue={""} disabled />
                           </Form.Group>
                         </td>
                         <td className="valueArea maxTD">
@@ -916,7 +757,7 @@ const WorkSheetData = () => {
                             controlId="companyCode"
                             className="form-group"
                           >
-                            <Form.Control defaultValue={"Front Lower Control arm"} disabled />
+                            <Form.Control defaultValue={""} disabled />
                           </Form.Group>
                         </td>
                         <td className="valueArea maxTD">
@@ -924,7 +765,7 @@ const WorkSheetData = () => {
                             controlId="companyCode"
                             className="form-group"
                           >
-                            <Form.Control defaultValue={"Front Lower Control arm"} disabled />
+                            <Form.Control defaultValue={""} disabled />
                           </Form.Group>
                         </td>
                         <td className="valueArea maxTD">
@@ -932,7 +773,7 @@ const WorkSheetData = () => {
                             controlId="companyCode"
                             className="form-group"
                           >
-                            <Form.Control defaultValue={"Front Lower Control arm"} disabled />
+                            <Form.Control defaultValue={""} disabled />
                           </Form.Group>
                         </td>
                         <td className="valueArea maxTD">
@@ -940,7 +781,7 @@ const WorkSheetData = () => {
                             controlId="companyCode"
                             className="form-group"
                           >
-                            <Form.Control defaultValue={"Front Lower Control arm"} disabled />
+                            <Form.Control defaultValue={""} disabled />
                           </Form.Group>
                         </td>
                         <td className="valueArea maxTD">
@@ -948,7 +789,7 @@ const WorkSheetData = () => {
                             controlId="companyCode"
                             className="form-group"
                           >
-                            <Form.Control defaultValue={"Front Lower Control arm"} disabled />
+                            <Form.Control defaultValue={""} disabled />
                           </Form.Group>
                         </td>
                         <td className="valueArea maxTD">
@@ -956,7 +797,207 @@ const WorkSheetData = () => {
                             controlId="companyCode"
                             className="form-group"
                           >
-                            <Form.Control defaultValue={"Front Lower Control arm"} disabled />
+                            <Form.Control defaultValue={""} disabled />
+                          </Form.Group>
+                          <button className="trashIcon">
+                            <Image
+                                src="/img/trash.png"
+                                alt="Angstrom Logo"
+                                className='main_logo'
+                                width={18}
+                                height={18}
+                                priority
+                            />
+                          </button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td className="valueArea maxTD">
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group"
+                          >
+                            <Form.Control defaultValue={""} disabled />
+                          </Form.Group>
+                        </td>
+                        <td className="valueArea maxTD">
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group"
+                          >
+                            <Form.Control defaultValue={""} disabled />
+                          </Form.Group>
+                        </td>
+                        <td className="valueArea maxTD">
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group"
+                          >
+                            <Form.Control defaultValue={""} disabled />
+                          </Form.Group>
+                        </td>
+                        <td className="valueArea maxTD">
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group"
+                          >
+                            <Form.Control defaultValue={""} disabled />
+                          </Form.Group>
+                        </td>
+                        <td className="valueArea maxTD">
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group"
+                          >
+                            <Form.Control defaultValue={""} disabled />
+                          </Form.Group>
+                        </td>
+                        <td className="valueArea maxTD">
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group"
+                          >
+                            <Form.Control defaultValue={""} disabled />
+                          </Form.Group>
+                        </td>
+                        <td className="valueArea maxTD">
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group"
+                          >
+                            <Form.Control defaultValue={""} disabled />
+                          </Form.Group>
+                        </td>
+                        <td className="valueArea maxTD">
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group"
+                          >
+                            <Form.Control defaultValue={""} disabled />
+                          </Form.Group>
+                        </td>
+                        <td className="valueArea maxTD">
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group"
+                          >
+                            <Form.Control defaultValue={""} disabled />
+                          </Form.Group>
+                        </td>
+                        <td className="valueArea maxTD">
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group"
+                          >
+                            <Form.Control defaultValue={""} disabled />
+                          </Form.Group>
+                        </td>
+                        <td className="valueArea maxTD">
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group"
+                          >
+                            <Form.Control defaultValue={""} disabled />
+                          </Form.Group>
+                          <button className="trashIcon">
+                            <Image
+                                src="/img/trash.png"
+                                alt="Angstrom Logo"
+                                className='main_logo'
+                                width={18}
+                                height={18}
+                                priority
+                            />
+                          </button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td className="valueArea maxTD">
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group"
+                          >
+                            <Form.Control defaultValue={""} disabled />
+                          </Form.Group>
+                        </td>
+                        <td className="valueArea maxTD">
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group"
+                          >
+                            <Form.Control defaultValue={""} disabled />
+                          </Form.Group>
+                        </td>
+                        <td className="valueArea maxTD">
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group"
+                          >
+                            <Form.Control defaultValue={""} disabled />
+                          </Form.Group>
+                        </td>
+                        <td className="valueArea maxTD">
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group"
+                          >
+                            <Form.Control defaultValue={""} disabled />
+                          </Form.Group>
+                        </td>
+                        <td className="valueArea maxTD">
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group"
+                          >
+                            <Form.Control defaultValue={""} disabled />
+                          </Form.Group>
+                        </td>
+                        <td className="valueArea maxTD">
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group"
+                          >
+                            <Form.Control defaultValue={""} disabled />
+                          </Form.Group>
+                        </td>
+                        <td className="valueArea maxTD">
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group"
+                          >
+                            <Form.Control defaultValue={""} disabled />
+                          </Form.Group>
+                        </td>
+                        <td className="valueArea maxTD">
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group"
+                          >
+                            <Form.Control defaultValue={""} disabled />
+                          </Form.Group>
+                        </td>
+                        <td className="valueArea maxTD">
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group"
+                          >
+                            <Form.Control defaultValue={""} disabled />
+                          </Form.Group>
+                        </td>
+                        <td className="valueArea maxTD">
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group"
+                          >
+                            <Form.Control defaultValue={""} disabled />
+                          </Form.Group>
+                        </td>
+                        <td className="valueArea maxTD">
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group"
+                          >
+                            <Form.Control defaultValue={""} disabled />
                           </Form.Group>
                         </td>
                       </tr>
@@ -978,14 +1019,14 @@ const WorkSheetData = () => {
                         <td className="border-none">
                           <div className="add-delete">
                             <button class="saveBtn">Add</button>
-                            <button class="saveBtn">Delete</button>
+                            {/* <button class="saveBtn">Delete</button> */}
                           </div>
                         </td>
                       </tr>
                     </tbody>
                   </table>
                 </div>
-              </div>             
+              </div>
 
               <div className="worksheetSingle">
                 <div className="worksheetHeader">
@@ -996,17 +1037,18 @@ const WorkSheetData = () => {
                   <table className="verticalTable">
                     <thead>
                       <tr>
-                        <th>Part No.</th>
-                        <th>Part Description</th>
-                        <th>Nt. Wt (ib)</th>
-                        <th>Gross Wt. (ib)</th>
-                        <th>Piece Price ($)</th>
-                        <th>Pieces Assy</th>
-                        <th>Mark Up</th>
-                        <th>3%</th>
-                        <th>Freight/Pc</th>
-                        <th>Price</th>
-                        <th>Notes/Comments</th>
+                        <th className="min-column">Part No.</th>
+                        <th className="max-column">Part Description</th>
+                        <th className="min-column">Nt. Wt (ib)</th>
+                        <th className="min-column">Gross Wt. (ib)</th>
+                        <th className="min-column">Piece Price ($)</th>
+                        <th className="min-column">Pieces Assy</th>
+                        <th className="min-column">Mark Up</th>
+                        <th className="min-column">3%</th>
+                        <th className="min-column">Freight/Pc</th>
+                        <th className="min-column">Price</th>
+                        <th className="max-column">Notes/Comments</th>
+                        <th className="min-column">Actual Rate</th>
                       </tr>
                     </thead>
                     <tbody>
@@ -1016,7 +1058,7 @@ const WorkSheetData = () => {
                             controlId="companyCode"
                             className="form-group"
                           >
-                            <Form.Control defaultValue={"Front Lower Control arm"} disabled />
+                            <Form.Control defaultValue={""} disabled />
                           </Form.Group>
                         </td>
                         <td className="valueArea maxTD">
@@ -1024,7 +1066,7 @@ const WorkSheetData = () => {
                             controlId="companyCode"
                             className="form-group"
                           >
-                            <Form.Control defaultValue={"Front Lower Control arm"} disabled />
+                            <Form.Control defaultValue={""} disabled />
                           </Form.Group>
                         </td>
                         <td className="valueArea maxTD">
@@ -1032,7 +1074,7 @@ const WorkSheetData = () => {
                             controlId="companyCode"
                             className="form-group"
                           >
-                            <Form.Control defaultValue={"Front Lower Control arm"} disabled />
+                            <Form.Control defaultValue={""} disabled />
                           </Form.Group>
                         </td>
                         <td className="valueArea maxTD">
@@ -1040,7 +1082,7 @@ const WorkSheetData = () => {
                             controlId="companyCode"
                             className="form-group"
                           >
-                            <Form.Control defaultValue={"Front Lower Control arm"} disabled />
+                            <Form.Control defaultValue={""} disabled />
                           </Form.Group>
                         </td>
                         <td className="valueArea maxTD">
@@ -1048,7 +1090,7 @@ const WorkSheetData = () => {
                             controlId="companyCode"
                             className="form-group"
                           >
-                            <Form.Control defaultValue={"Front Lower Control arm"} disabled />
+                            <Form.Control defaultValue={""} disabled />
                           </Form.Group>
                         </td>
                         <td className="valueArea maxTD">
@@ -1056,7 +1098,7 @@ const WorkSheetData = () => {
                             controlId="companyCode"
                             className="form-group"
                           >
-                            <Form.Control defaultValue={"Front Lower Control arm"} disabled />
+                            <Form.Control defaultValue={""} disabled />
                           </Form.Group>
                         </td>
                         <td className="valueArea maxTD">
@@ -1064,7 +1106,7 @@ const WorkSheetData = () => {
                             controlId="companyCode"
                             className="form-group"
                           >
-                            <Form.Control defaultValue={"Front Lower Control arm"} disabled />
+                            <Form.Control defaultValue={""} disabled />
                           </Form.Group>
                         </td>
                         <td className="valueArea maxTD">
@@ -1072,7 +1114,7 @@ const WorkSheetData = () => {
                             controlId="companyCode"
                             className="form-group"
                           >
-                            <Form.Control defaultValue={"Front Lower Control arm"} disabled />
+                            <Form.Control defaultValue={""} disabled />
                           </Form.Group>
                         </td>
                         <td className="valueArea maxTD">
@@ -1080,7 +1122,7 @@ const WorkSheetData = () => {
                             controlId="companyCode"
                             className="form-group"
                           >
-                            <Form.Control defaultValue={"Front Lower Control arm"} disabled />
+                            <Form.Control defaultValue={""} disabled />
                           </Form.Group>
                         </td>
                         <td className="valueArea maxTD">
@@ -1088,7 +1130,7 @@ const WorkSheetData = () => {
                             controlId="companyCode"
                             className="form-group"
                           >
-                            <Form.Control defaultValue={"Front Lower Control arm"} disabled />
+                            <Form.Control defaultValue={""} disabled />
                           </Form.Group>
                         </td>
                         <td className="valueArea maxTD">
@@ -1096,17 +1138,7 @@ const WorkSheetData = () => {
                             controlId="companyCode"
                             className="form-group"
                           >
-                            <Form.Control defaultValue={"Front Lower Control arm"} disabled />
-                          </Form.Group>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td className="valueArea maxTD">
-                          <Form.Group
-                            controlId="companyCode"
-                            className="form-group"
-                          >
-                            <Form.Control defaultValue={"Front Lower Control arm"} disabled />
+                            <Form.Control defaultValue={""} disabled />
                           </Form.Group>
                         </td>
                         <td className="valueArea maxTD">
@@ -1114,357 +1146,25 @@ const WorkSheetData = () => {
                             controlId="companyCode"
                             className="form-group"
                           >
-                            <Form.Control defaultValue={"Front Lower Control arm"} disabled />
+                            <Form.Control defaultValue={""} disabled />
                           </Form.Group>
-                        </td>
-                        <td className="valueArea maxTD">
-                          <Form.Group
-                            controlId="companyCode"
-                            className="form-group"
-                          >
-                            <Form.Control defaultValue={"Front Lower Control arm"} disabled />
-                          </Form.Group>
-                        </td>
-                        <td className="valueArea maxTD">
-                          <Form.Group
-                            controlId="companyCode"
-                            className="form-group"
-                          >
-                            <Form.Control defaultValue={"Front Lower Control arm"} disabled />
-                          </Form.Group>
-                        </td>
-                        <td className="valueArea maxTD">
-                          <Form.Group
-                            controlId="companyCode"
-                            className="form-group"
-                          >
-                            <Form.Control defaultValue={"Front Lower Control arm"} disabled />
-                          </Form.Group>
-                        </td>
-                        <td className="valueArea maxTD">
-                          <Form.Group
-                            controlId="companyCode"
-                            className="form-group"
-                          >
-                            <Form.Control defaultValue={"Front Lower Control arm"} disabled />
-                          </Form.Group>
-                        </td>
-                        <td className="valueArea maxTD">
-                          <Form.Group
-                            controlId="companyCode"
-                            className="form-group"
-                          >
-                            <Form.Control defaultValue={"Front Lower Control arm"} disabled />
-                          </Form.Group>
-                        </td>
-                        <td className="valueArea maxTD">
-                          <Form.Group
-                            controlId="companyCode"
-                            className="form-group"
-                          >
-                            <Form.Control defaultValue={"Front Lower Control arm"} disabled />
-                          </Form.Group>
-                        </td>
-                        <td className="valueArea maxTD">
-                          <Form.Group
-                            controlId="companyCode"
-                            className="form-group"
-                          >
-                            <Form.Control defaultValue={"Front Lower Control arm"} disabled />
-                          </Form.Group>
-                        </td>
-                        <td className="valueArea maxTD">
-                          <Form.Group
-                            controlId="companyCode"
-                            className="form-group"
-                          >
-                            <Form.Control defaultValue={"Front Lower Control arm"} disabled />
-                          </Form.Group>
-                        </td>
-                        <td className="valueArea maxTD">
-                          <Form.Group
-                            controlId="companyCode"
-                            className="form-group"
-                          >
-                            <Form.Control defaultValue={"Front Lower Control arm"} disabled />
-                          </Form.Group>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td className="valueArea maxTD">
-                          <Form.Group
-                            controlId="companyCode"
-                            className="form-group"
-                          >
-                            <Form.Control defaultValue={"Front Lower Control arm"} disabled />
-                          </Form.Group>
-                        </td>
-                        <td className="valueArea maxTD">
-                          <Form.Group
-                            controlId="companyCode"
-                            className="form-group"
-                          >
-                            <Form.Control defaultValue={"Front Lower Control arm"} disabled />
-                          </Form.Group>
-                        </td>
-                        <td className="valueArea maxTD">
-                          <Form.Group
-                            controlId="companyCode"
-                            className="form-group"
-                          >
-                            <Form.Control defaultValue={"Front Lower Control arm"} disabled />
-                          </Form.Group>
-                        </td>
-                        <td className="valueArea maxTD">
-                          <Form.Group
-                            controlId="companyCode"
-                            className="form-group"
-                          >
-                            <Form.Control defaultValue={"Front Lower Control arm"} disabled />
-                          </Form.Group>
-                        </td>
-                        <td className="valueArea maxTD">
-                          <Form.Group
-                            controlId="companyCode"
-                            className="form-group"
-                          >
-                            <Form.Control defaultValue={"Front Lower Control arm"} disabled />
-                          </Form.Group>
-                        </td>
-                        <td className="valueArea maxTD">
-                          <Form.Group
-                            controlId="companyCode"
-                            className="form-group"
-                          >
-                            <Form.Control defaultValue={"Front Lower Control arm"} disabled />
-                          </Form.Group>
-                        </td>
-                        <td className="valueArea maxTD">
-                          <Form.Group
-                            controlId="companyCode"
-                            className="form-group"
-                          >
-                            <Form.Control defaultValue={"Front Lower Control arm"} disabled />
-                          </Form.Group>
-                        </td>
-                        <td className="valueArea maxTD">
-                          <Form.Group
-                            controlId="companyCode"
-                            className="form-group"
-                          >
-                            <Form.Control defaultValue={"Front Lower Control arm"} disabled />
-                          </Form.Group>
-                        </td>
-                        <td className="valueArea maxTD">
-                          <Form.Group
-                            controlId="companyCode"
-                            className="form-group"
-                          >
-                            <Form.Control defaultValue={"Front Lower Control arm"} disabled />
-                          </Form.Group>
-                        </td>
-                        <td className="valueArea maxTD">
-                          <Form.Group
-                            controlId="companyCode"
-                            className="form-group"
-                          >
-                            <Form.Control defaultValue={"Front Lower Control arm"} disabled />
-                          </Form.Group>
-                        </td>
-                        <td className="valueArea maxTD">
-                          <Form.Group
-                            controlId="companyCode"
-                            className="form-group"
-                          >
-                            <Form.Control defaultValue={"Front Lower Control arm"} disabled />
-                          </Form.Group>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td className="valueArea maxTD">
-                          <Form.Group
-                            controlId="companyCode"
-                            className="form-group"
-                          >
-                            <Form.Control defaultValue={"Front Lower Control arm"} disabled />
-                          </Form.Group>
-                        </td>
-                        <td className="valueArea maxTD">
-                          <Form.Group
-                            controlId="companyCode"
-                            className="form-group"
-                          >
-                            <Form.Control defaultValue={"Front Lower Control arm"} disabled />
-                          </Form.Group>
-                        </td>
-                        <td className="valueArea maxTD">
-                          <Form.Group
-                            controlId="companyCode"
-                            className="form-group"
-                          >
-                            <Form.Control defaultValue={"Front Lower Control arm"} disabled />
-                          </Form.Group>
-                        </td>
-                        <td className="valueArea maxTD">
-                          <Form.Group
-                            controlId="companyCode"
-                            className="form-group"
-                          >
-                            <Form.Control defaultValue={"Front Lower Control arm"} disabled />
-                          </Form.Group>
-                        </td>
-                        <td className="valueArea maxTD">
-                          <Form.Group
-                            controlId="companyCode"
-                            className="form-group"
-                          >
-                            <Form.Control defaultValue={"Front Lower Control arm"} disabled />
-                          </Form.Group>
-                        </td>
-                        <td className="valueArea maxTD">
-                          <Form.Group
-                            controlId="companyCode"
-                            className="form-group"
-                          >
-                            <Form.Control defaultValue={"Front Lower Control arm"} disabled />
-                          </Form.Group>
-                        </td>
-                        <td className="valueArea maxTD">
-                          <Form.Group
-                            controlId="companyCode"
-                            className="form-group"
-                          >
-                            <Form.Control defaultValue={"Front Lower Control arm"} disabled />
-                          </Form.Group>
-                        </td>
-                        <td className="valueArea maxTD">
-                          <Form.Group
-                            controlId="companyCode"
-                            className="form-group"
-                          >
-                            <Form.Control defaultValue={"Front Lower Control arm"} disabled />
-                          </Form.Group>
-                        </td>
-                        <td className="valueArea maxTD">
-                          <Form.Group
-                            controlId="companyCode"
-                            className="form-group"
-                          >
-                            <Form.Control defaultValue={"Front Lower Control arm"} disabled />
-                          </Form.Group>
-                        </td>
-                        <td className="valueArea maxTD">
-                          <Form.Group
-                            controlId="companyCode"
-                            className="form-group"
-                          >
-                            <Form.Control defaultValue={"Front Lower Control arm"} disabled />
-                          </Form.Group>
-                        </td>
-                        <td className="valueArea maxTD">
-                          <Form.Group
-                            controlId="companyCode"
-                            className="form-group"
-                          >
-                            <Form.Control defaultValue={"Front Lower Control arm"} disabled />
-                          </Form.Group>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td className="valueArea maxTD">
-                          <Form.Group
-                            controlId="companyCode"
-                            className="form-group"
-                          >
-                            <Form.Control defaultValue={"Front Lower Control arm"} disabled />
-                          </Form.Group>
-                        </td>
-                        <td className="valueArea maxTD">
-                          <Form.Group
-                            controlId="companyCode"
-                            className="form-group"
-                          >
-                            <Form.Control defaultValue={"Front Lower Control arm"} disabled />
-                          </Form.Group>
-                        </td>
-                        <td className="valueArea maxTD">
-                          <Form.Group
-                            controlId="companyCode"
-                            className="form-group"
-                          >
-                            <Form.Control defaultValue={"Front Lower Control arm"} disabled />
-                          </Form.Group>
-                        </td>
-                        <td className="valueArea maxTD">
-                          <Form.Group
-                            controlId="companyCode"
-                            className="form-group"
-                          >
-                            <Form.Control defaultValue={"Front Lower Control arm"} disabled />
-                          </Form.Group>
-                        </td>
-                        <td className="valueArea maxTD">
-                          <Form.Group
-                            controlId="companyCode"
-                            className="form-group"
-                          >
-                            <Form.Control defaultValue={"Front Lower Control arm"} disabled />
-                          </Form.Group>
-                        </td>
-                        <td className="valueArea maxTD">
-                          <Form.Group
-                            controlId="companyCode"
-                            className="form-group"
-                          >
-                            <Form.Control defaultValue={"Front Lower Control arm"} disabled />
-                          </Form.Group>
-                        </td>
-                        <td className="valueArea maxTD">
-                          <Form.Group
-                            controlId="companyCode"
-                            className="form-group"
-                          >
-                            <Form.Control defaultValue={"Front Lower Control arm"} disabled />
-                          </Form.Group>
-                        </td>
-                        <td className="valueArea maxTD">
-                          <Form.Group
-                            controlId="companyCode"
-                            className="form-group"
-                          >
-                            <Form.Control defaultValue={"Front Lower Control arm"} disabled />
-                          </Form.Group>
-                        </td>
-                        <td className="valueArea maxTD">
-                          <Form.Group
-                            controlId="companyCode"
-                            className="form-group"
-                          >
-                            <Form.Control defaultValue={"Front Lower Control arm"} disabled />
-                          </Form.Group>
-                        </td>
-                        <td className="valueArea maxTD">
-                          <Form.Group
-                            controlId="companyCode"
-                            className="form-group"
-                          >
-                            <Form.Control defaultValue={"Front Lower Control arm"} disabled />
-                          </Form.Group>
-                        </td>
-                        <td className="valueArea maxTD">
-                          <Form.Group
-                            controlId="companyCode"
-                            className="form-group"
-                          >
-                            <Form.Control defaultValue={"Front Lower Control arm"} disabled />
-                          </Form.Group>
+                          <button className="trashIcon">
+                            <Image
+                                src="/img/trash.png"
+                                alt="Angstrom Logo"
+                                className='main_logo'
+                                width={18}
+                                height={18}
+                                priority
+                            />
+                          </button>
                         </td>
                       </tr>
                       <tr className="lastRow">
                         <td colSpan={7} className="border-none"></td>
                         <td colSpan={2}>
                           <div className="total-price total-price-td">
-                            Total Purchased Price
+                            {/* Total Purchased Price */}
                           </div>
                         </td>
                         <td className="valueArea maxTD">
@@ -1472,13 +1172,13 @@ const WorkSheetData = () => {
                             controlId="companyCode"
                             className="form-group"
                           >
-                            <Form.Control defaultValue={""} />
+                            <Form.Control defaultValue={"$ 4.42"} />
                           </Form.Group>
                         </td>
                         <td className="border-none">
                           <div className="add-delete">
                             <button class="saveBtn">Add</button>
-                            <button class="saveBtn">Delete</button>
+                            {/* <button class="saveBtn">Delete</button> */}
                           </div>
                         </td>
                       </tr>
