@@ -1,5 +1,5 @@
 body {
-    background: none;
+    background: #dbdfe0;
 }
 .landing_wrapper {
     width: 100%;
@@ -129,6 +129,7 @@ nav {
             height: 100%;
             margin: 0 0 0 1px;
             a {
+                color: #000;
                 font-size: 14px;
                 padding: 0 20px;
                 font-weight: 500;
@@ -180,6 +181,7 @@ nav {
     width: calc(100% - 50px);
 }
 .user_data_name {
+    color: #000;
     font-size: 13px;
     font-weight: 600;
 }
@@ -213,7 +215,7 @@ nav {
     // margin: 40px 0 0;
 }
 .page_heading {
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 600;
     margin: 0 0 20px;
     position: relative;
@@ -331,6 +333,7 @@ nav {
         font-weight: 500;
     }
     .form-control {
+        min-width: 150px;
         height: 30px;
         border: 1px solid rgb(0 0 0 / 20%);
         padding: 0 10px;
