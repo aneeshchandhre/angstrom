@@ -1185,7 +1185,1087 @@ const WorkSheetData = () => {
                     </tbody>
                   </table>
                 </div>
+              </div>
+
+              <div className="worksheetSingle">
+                <div className="worksheetHeader">
+                  <h2 className='page_heading'>Secondary Process / Subcontracting / Outside Process Costs</h2>
+                  <button className="saveBtn">Save</button>
+                </div>
+                <div className="table-responsive">
+                  <table className="verticalTable">
+                    <thead>
+                      <tr>
+                        <th className="min-column"></th>
+                        <th className="max-column">Operation Description</th>
+                        <th className="min-column">Pcs/Hr</th>
+                        <th className="min-column">Efficiency (%)</th>
+                        <th className="min-column">Gaging</th>
+                        <th className="min-column">Tooling</th>
+                        <th className="min-column">Cost1</th>
+                        <th className="min-column">Cost2</th>
+                        <th className="min-column">Op Cost.</th>
+                        <th className="min-column">Cost thru this op</th>
+                        <th className="max-column">Notes/Comments</th>
+                        <th className="min-column">Actual Rate</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td className="valueArea maxTD">
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group"
+                          >
+                            <Form.Control defaultValue={"70"} />
+                          </Form.Group>
+                        </td>
+                        <td className="valueArea maxTD bg-dark-blue">
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group"
+                          >
+                            <Form.Control defaultValue={"Etch"} />
+                          </Form.Group>
+                        </td>
+                        <td className="valueArea maxTD lightBlue">
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group"
+                          >
+                            <Form.Control defaultValue={"600"}  />
+                          </Form.Group>
+                        </td>
+                        <td className="valueArea maxTD">
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group"
+                          >
+                            <Form.Control defaultValue={"90%"} />
+                          </Form.Group>
+                        </td>
+                        <td className="valueArea maxTD">
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group"
+                          >
+                            <Form.Control defaultValue={""} />
+                          </Form.Group>
+                        </td>
+                        <td className="valueArea maxTD">
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group"
+                          >
+                            <Form.Control defaultValue={""} />
+                          </Form.Group>
+                        </td>
+                        <td className="valueArea maxTD">
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group priceInput"
+                          >
+                            <Form.Control defaultValue={"59.8"} />
+                          </Form.Group>
+                        </td>
+                        <td className="valueArea maxTD">
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group priceInput"
+                          >
+                            <Form.Control defaultValue={"73.1"} />
+                          </Form.Group>
+                        </td>
+                        <td className="valueArea maxTD">
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group priceInput"
+                          >
+                            <Form.Control defaultValue={"0.3"} disabled />
+                          </Form.Group>
+                        </td>
+                        <td className="valueArea maxTD">
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group priceInput"
+                          >
+                            <Form.Control defaultValue={"$ 16.8"} />
+                          </Form.Group>
+                        </td>
+                        <td className="valueArea maxTD">
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group"
+                          >
+                            <Form.Control defaultValue={""} />
+                          </Form.Group>
+                        </td>
+                        <td className="valueArea maxTD">
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group"
+                          >
+                            <Form.Control defaultValue={"540"} />
+                          </Form.Group>
+                          <button className="trashIcon">
+                            <Image
+                                src="/img/trash.png"
+                                alt="Angstrom Logo"
+                                className='main_logo'
+                                width={18}
+                                height={18}
+                                priority
+                            />
+                          </button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td className="valueArea maxTD">
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group"
+                          >
+                            <Form.Control defaultValue={"70"} />
+                          </Form.Group>
+                        </td>
+                        <td className="valueArea maxTD bg-dark-blue">
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group"
+                          >
+                            <Form.Control defaultValue={"Etch"} />
+                          </Form.Group>
+                        </td>
+                        <td className="valueArea maxTD lightBlue">
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group"
+                          >
+                            <Form.Control defaultValue={"600"}  />
+                          </Form.Group>
+                        </td>
+                        <td className="valueArea maxTD">
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group"
+                          >
+                            <Form.Control defaultValue={"90%"} />
+                          </Form.Group>
+                        </td>
+                        <td className="valueArea maxTD">
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group"
+                          >
+                            <Form.Control defaultValue={""} />
+                          </Form.Group>
+                        </td>
+                        <td className="valueArea maxTD">
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group"
+                          >
+                            <Form.Control defaultValue={""} />
+                          </Form.Group>
+                        </td>
+                        <td className="valueArea maxTD">
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group priceInput"
+                          >
+                            <Form.Control defaultValue={"59.8"} />
+                          </Form.Group>
+                        </td>
+                        <td className="valueArea maxTD">
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group priceInput"
+                          >
+                            <Form.Control defaultValue={"73.1"} />
+                          </Form.Group>
+                        </td>
+                        <td className="valueArea maxTD">
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group priceInput"
+                          >
+                            <Form.Control defaultValue={"0.3"} disabled />
+                          </Form.Group>
+                        </td>
+                        <td className="valueArea maxTD">
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group priceInput"
+                          >
+                            <Form.Control defaultValue={"$ 16.8"} />
+                          </Form.Group>
+                        </td>
+                        <td className="valueArea maxTD">
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group"
+                          >
+                            <Form.Control defaultValue={""} />
+                          </Form.Group>
+                        </td>
+                        <td className="valueArea maxTD">
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group"
+                          >
+                            <Form.Control defaultValue={"540"} />
+                          </Form.Group>
+                          <button className="trashIcon">
+                            <Image
+                                src="/img/trash.png"
+                                alt="Angstrom Logo"
+                                className='main_logo'
+                                width={18}
+                                height={18}
+                                priority
+                            />
+                          </button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td className="valueArea maxTD">
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group"
+                          >
+                            <Form.Control defaultValue={"70"} />
+                          </Form.Group>
+                        </td>
+                        <td className="valueArea maxTD bg-dark-blue">
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group"
+                          >
+                            <Form.Control defaultValue={"Etch"} />
+                          </Form.Group>
+                        </td>
+                        <td className="valueArea maxTD lightBlue">
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group"
+                          >
+                            <Form.Control defaultValue={"600"}  />
+                          </Form.Group>
+                        </td>
+                        <td className="valueArea maxTD">
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group"
+                          >
+                            <Form.Control defaultValue={"90%"} />
+                          </Form.Group>
+                        </td>
+                        <td className="valueArea maxTD">
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group"
+                          >
+                            <Form.Control defaultValue={""} />
+                          </Form.Group>
+                        </td>
+                        <td className="valueArea maxTD">
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group"
+                          >
+                            <Form.Control defaultValue={""} />
+                          </Form.Group>
+                        </td>
+                        <td className="valueArea maxTD">
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group priceInput"
+                          >
+                            <Form.Control defaultValue={"59.8"} />
+                          </Form.Group>
+                        </td>
+                        <td className="valueArea maxTD">
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group priceInput"
+                          >
+                            <Form.Control defaultValue={"73.1"} />
+                          </Form.Group>
+                        </td>
+                        <td className="valueArea maxTD">
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group priceInput"
+                          >
+                            <Form.Control defaultValue={"0.3"} disabled />
+                          </Form.Group>
+                        </td>
+                        <td className="valueArea maxTD">
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group priceInput"
+                          >
+                            <Form.Control defaultValue={"$ 16.8"} />
+                          </Form.Group>
+                        </td>
+                        <td className="valueArea maxTD">
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group"
+                          >
+                            <Form.Control defaultValue={""} />
+                          </Form.Group>
+                        </td>
+                        <td className="valueArea maxTD">
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group"
+                          >
+                            <Form.Control defaultValue={"540"} />
+                          </Form.Group>
+                          <button className="trashIcon">
+                            <Image
+                                src="/img/trash.png"
+                                alt="Angstrom Logo"
+                                className='main_logo'
+                                width={18}
+                                height={18}
+                                priority
+                            />
+                          </button>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
               </div>             
+
+              <div className="worksheetSingle">
+                <div className="worksheetHeader">
+                  <h2 className='page_heading'>Miscellaneous Costs</h2>
+                  <button className="saveBtn">Save</button>
+                </div>
+                <div className="table-responsive">
+                  <table className="verticalTable">
+                    <thead>
+                      <tr>
+                        <th className="min-column"></th>
+                        <th className="max-column"></th>
+                        <th className="min-column"></th>
+                        <th className="min-column"></th>
+                        <th className="min-column">Gaging</th>
+                        <th className="min-column">Tooling</th>
+                        <th className="min-column">Cost1</th>
+                        <th className="min-column">Cost2</th>
+                        <th className="min-column">Op Cost.</th>
+                        <th className="min-column">Cost thru this op</th>
+                        <th className="max-column">Notes/Comments</th>
+                        <th className="min-column">Actual Rate</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td className="valueArea maxTD">
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group"
+                          >
+                            <Form.Control defaultValue={"70"} />
+                          </Form.Group>
+                        </td>
+                        <td className="valueArea maxTD bg-dark-blue">
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group"
+                          >
+                            <Form.Control defaultValue={"Etch"} />
+                          </Form.Group>
+                        </td>
+                        <td className="valueArea maxTD lightBlue">
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group"
+                          >
+                            <Form.Control defaultValue={"600"}  />
+                          </Form.Group>
+                        </td>
+                        <td className="valueArea maxTD">
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group"
+                          >
+                            <Form.Control defaultValue={"90%"} />
+                          </Form.Group>
+                        </td>
+                        <td className="valueArea maxTD">
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group"
+                          >
+                            <Form.Control defaultValue={""} />
+                          </Form.Group>
+                        </td>
+                        <td className="valueArea maxTD">
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group"
+                          >
+                            <Form.Control defaultValue={""} />
+                          </Form.Group>
+                        </td>
+                        <td className="valueArea maxTD">
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group priceInput"
+                          >
+                            <Form.Control defaultValue={"59.8"} />
+                          </Form.Group>
+                        </td>
+                        <td className="valueArea maxTD">
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group priceInput"
+                          >
+                            <Form.Control defaultValue={"73.1"} />
+                          </Form.Group>
+                        </td>
+                        <td className="valueArea maxTD">
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group priceInput"
+                          >
+                            <Form.Control defaultValue={"0.3"} disabled />
+                          </Form.Group>
+                        </td>
+                        <td className="valueArea maxTD">
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group priceInput"
+                          >
+                            <Form.Control defaultValue={"$ 16.8"} />
+                          </Form.Group>
+                        </td>
+                        <td className="valueArea maxTD">
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group"
+                          >
+                            <Form.Control defaultValue={""} />
+                          </Form.Group>
+                        </td>
+                        <td className="valueArea maxTD">
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group"
+                          >
+                            <Form.Control defaultValue={"540"} />
+                          </Form.Group>
+                          <button className="trashIcon">
+                            <Image
+                                src="/img/trash.png"
+                                alt="Angstrom Logo"
+                                className='main_logo'
+                                width={18}
+                                height={18}
+                                priority
+                            />
+                          </button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td className="valueArea maxTD">
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group"
+                          >
+                            <Form.Control defaultValue={"70"} />
+                          </Form.Group>
+                        </td>
+                        <td className="valueArea maxTD bg-dark-blue">
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group"
+                          >
+                            <Form.Control defaultValue={"Etch"} />
+                          </Form.Group>
+                        </td>
+                        <td className="valueArea maxTD lightBlue">
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group"
+                          >
+                            <Form.Control defaultValue={"600"}  />
+                          </Form.Group>
+                        </td>
+                        <td className="valueArea maxTD">
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group"
+                          >
+                            <Form.Control defaultValue={"90%"} />
+                          </Form.Group>
+                        </td>
+                        <td className="valueArea maxTD">
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group"
+                          >
+                            <Form.Control defaultValue={""} />
+                          </Form.Group>
+                        </td>
+                        <td className="valueArea maxTD">
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group"
+                          >
+                            <Form.Control defaultValue={""} />
+                          </Form.Group>
+                        </td>
+                        <td className="valueArea maxTD">
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group priceInput"
+                          >
+                            <Form.Control defaultValue={"59.8"} />
+                          </Form.Group>
+                        </td>
+                        <td className="valueArea maxTD">
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group priceInput"
+                          >
+                            <Form.Control defaultValue={"73.1"} />
+                          </Form.Group>
+                        </td>
+                        <td className="valueArea maxTD">
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group priceInput"
+                          >
+                            <Form.Control defaultValue={"0.3"} disabled />
+                          </Form.Group>
+                        </td>
+                        <td className="valueArea maxTD">
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group priceInput"
+                          >
+                            <Form.Control defaultValue={"$ 16.8"} />
+                          </Form.Group>
+                        </td>
+                        <td className="valueArea maxTD">
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group"
+                          >
+                            <Form.Control defaultValue={""} />
+                          </Form.Group>
+                        </td>
+                        <td className="valueArea maxTD">
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group"
+                          >
+                            <Form.Control defaultValue={"540"} />
+                          </Form.Group>
+                          <button className="trashIcon">
+                            <Image
+                                src="/img/trash.png"
+                                alt="Angstrom Logo"
+                                className='main_logo'
+                                width={18}
+                                height={18}
+                                priority
+                            />
+                          </button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td className="valueArea maxTD">
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group"
+                          >
+                            <Form.Control defaultValue={"70"} />
+                          </Form.Group>
+                        </td>
+                        <td className="valueArea maxTD bg-dark-blue">
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group"
+                          >
+                            <Form.Control defaultValue={"Etch"} />
+                          </Form.Group>
+                        </td>
+                        <td className="valueArea maxTD lightBlue">
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group"
+                          >
+                            <Form.Control defaultValue={"600"}  />
+                          </Form.Group>
+                        </td>
+                        <td className="valueArea maxTD">
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group"
+                          >
+                            <Form.Control defaultValue={"90%"} />
+                          </Form.Group>
+                        </td>
+                        <td className="valueArea maxTD">
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group"
+                          >
+                            <Form.Control defaultValue={""} />
+                          </Form.Group>
+                        </td>
+                        <td className="valueArea maxTD">
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group"
+                          >
+                            <Form.Control defaultValue={""} />
+                          </Form.Group>
+                        </td>
+                        <td className="valueArea maxTD">
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group priceInput"
+                          >
+                            <Form.Control defaultValue={"59.8"} />
+                          </Form.Group>
+                        </td>
+                        <td className="valueArea maxTD">
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group priceInput"
+                          >
+                            <Form.Control defaultValue={"73.1"} />
+                          </Form.Group>
+                        </td>
+                        <td className="valueArea maxTD">
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group priceInput"
+                          >
+                            <Form.Control defaultValue={"0.3"} disabled />
+                          </Form.Group>
+                        </td>
+                        <td className="valueArea maxTD">
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group priceInput"
+                          >
+                            <Form.Control defaultValue={"$ 16.8"} />
+                          </Form.Group>
+                        </td>
+                        <td className="valueArea maxTD">
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group"
+                          >
+                            <Form.Control defaultValue={""} />
+                          </Form.Group>
+                        </td>
+                        <td className="valueArea maxTD">
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group"
+                          >
+                            <Form.Control defaultValue={"540"} />
+                          </Form.Group>
+                          <button className="trashIcon">
+                            <Image
+                                src="/img/trash.png"
+                                alt="Angstrom Logo"
+                                className='main_logo'
+                                width={18}
+                                height={18}
+                                priority
+                            />
+                          </button>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>             
+
+              <div className="worksheetSingle">
+                <div className="worksheetHeader">
+                  <h2 className='page_heading'>Tooling Costs</h2>
+                  <button className="saveBtn">Save</button>
+                </div>
+                <div className="table-responsive">
+                  <table className="verticalTable">
+                    <thead>
+                      <tr>
+                        <th className="min-column">Oper. #</th>
+                        <th className="max-column">Tooling Description</th>
+                        <th className="min-column">Tooling Cost ($)</th>
+                        <th className="min-column text-center">Spare/Repl'nt <br/>Cost ($)</th>
+                        <th className="min-column text-center">Gaging/Insp.Fixt. <br/>Cost ($)</th>
+                        <th className="min-column">Total Tooling $</th>
+                        <th className="max-column text-center">Capital ($) <br/>Amount</th>
+                        <th className="min-column text-center">Capt'l Amort'n <br/>(if req'rd) $/pc</th>
+                        <th className="min-column text-center">Capital <br/>Description</th>
+                        <th className="max-column">Notes/comments</th>
+                        <th className="min-column">Prototype Tooling</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>  
+                        <td className="valueArea">
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group"
+                          >
+                            <Form.Control defaultValue={""} />
+                          </Form.Group>
+                        </td>
+                        <td className="valueArea">
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group"
+                          >
+                            <Form.Control defaultValue={""} />
+                          </Form.Group>
+                        </td>
+                        <td className="valueArea">
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group"
+                          >
+                            <Form.Control defaultValue={""} />
+                          </Form.Group>
+                        </td>
+                        <td className="valueArea">
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group"
+                          >
+                            <Form.Control defaultValue={""} />
+                          </Form.Group>
+                        </td>
+                        <td className="valueArea">
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group"
+                          >
+                            <Form.Control defaultValue={""} />
+                          </Form.Group>
+                        </td>
+                        <td className="valueArea">
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group priceInput"
+                          >
+                            <Form.Control defaultValue={"-"} />
+                          </Form.Group>
+                        </td>
+                        <td className="valueArea">
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group"
+                          >
+                            <Form.Control defaultValue={""} />
+                          </Form.Group>
+                        </td>
+                        <td className="valueArea">
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group"
+                          >
+                            <Form.Control defaultValue={""} />
+                          </Form.Group>
+                        </td>
+                        <td className="valueArea">
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group"
+                          >
+                            <Form.Control defaultValue={""} />
+                          </Form.Group>
+                        </td>
+                        <td className="valueArea">
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group"
+                          >
+                            <Form.Control defaultValue={""} />
+                          </Form.Group>
+                        </td>
+                        <td className="valueArea">
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group"
+                          >
+                            <Form.Control defaultValue={""} />
+                          </Form.Group>
+                          <button className="trashIcon">
+                            <Image
+                                src="/img/trash.png"
+                                alt="Angstrom Logo"
+                                className='main_logo'
+                                width={18}
+                                height={18}
+                                priority
+                            />
+                          </button>
+                        </td>
+                      </tr>
+                      <tr>  
+                        <td className="valueArea">
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group"
+                          >
+                            <Form.Control defaultValue={""} />
+                          </Form.Group>
+                        </td>
+                        <td className="valueArea">
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group"
+                          >
+                            <Form.Control defaultValue={""} />
+                          </Form.Group>
+                        </td>
+                        <td className="valueArea">
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group"
+                          >
+                            <Form.Control defaultValue={""} />
+                          </Form.Group>
+                        </td>
+                        <td className="valueArea">
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group"
+                          >
+                            <Form.Control defaultValue={""} />
+                          </Form.Group>
+                        </td>
+                        <td className="valueArea">
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group"
+                          >
+                            <Form.Control defaultValue={""} />
+                          </Form.Group>
+                        </td>
+                        <td className="valueArea">
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group priceInput"
+                          >
+                            <Form.Control defaultValue={"-"} />
+                          </Form.Group>
+                        </td>
+                        <td className="valueArea">
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group"
+                          >
+                            <Form.Control defaultValue={""} />
+                          </Form.Group>
+                        </td>
+                        <td className="valueArea">
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group"
+                          >
+                            <Form.Control defaultValue={""} />
+                          </Form.Group>
+                        </td>
+                        <td className="valueArea">
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group"
+                          >
+                            <Form.Control defaultValue={""} />
+                          </Form.Group>
+                        </td>
+                        <td className="valueArea">
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group"
+                          >
+                            <Form.Control defaultValue={""} />
+                          </Form.Group>
+                        </td>
+                        <td className="valueArea">
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group"
+                          >
+                            <Form.Control defaultValue={""} />
+                          </Form.Group>
+                          <button className="trashIcon">
+                            <Image
+                                src="/img/trash.png"
+                                alt="Angstrom Logo"
+                                className='main_logo'
+                                width={18}
+                                height={18}
+                                priority
+                            />
+                          </button>
+                        </td>
+                      </tr>
+                      <tr className="lastRow">  
+                        <td colSpan={5} className="valueArea">
+                          <h6 className="totlaHead text-right">Total Tooling</h6>
+                        </td>
+                        <td className="valueArea lightBlue">
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group priceInput"
+                          >
+                            <Form.Control defaultValue={"-"} />
+                          </Form.Group>
+                        </td>
+                        <td className="valueArea lightBlue">
+                          <div className="form-label-text">
+                            <h6 className="totlaHead text-right">Total Captal</h6>
+                            <Form.Group
+                              controlId="companyCode"
+                              className="form-group priceInput"
+                              >
+                              <Form.Control defaultValue={"-"} />
+                            </Form.Group>
+                            </div>  
+                        </td>
+                        <td className="valueArea lightBlue">
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group priceInput"
+                          >
+                            <Form.Control defaultValue={"-"} />
+                          </Form.Group>
+                        </td>
+                        <td className="valueArea"></td>
+                        <td className="valueArea"></td>
+                        <td className="valueArea lightBlue">
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group priceInput"
+                          >
+                            <Form.Control defaultValue={"-"} />
+                          </Form.Group>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+
+              <div className="worksheetSingle">
+                <div className="worksheetHeader">
+                  <h2 className='page_heading'>Margins and Productivity information</h2>
+                </div>
+                <div className="row">
+                  <div className="col-lg-6">
+                    <div className="table-responsive">
+                      <table className="verticalTable">
+                        <thead>
+                          <tr>
+                            <th className="max-column">Mark ups</th>
+                            <th className="">Calculation</th>
+                            <th className="max-column"></th>
+                            <th className=""></th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr> 
+                            <td>R/M and Components Markup</td>
+                            <td className="valueArea lightBlue">
+                              <Form.Group
+                                controlId="companyCode"
+                                className="form-group"
+                              >
+                                <Form.Control defaultValue={"3.0%"} />
+                              </Form.Group>
+                            </td>
+                            <td>YoY Productivity</td>
+                            <td className="valueArea bg-dark-blue">
+                              <Form.Group
+                                controlId="companyCode"
+                                className="form-group"
+                              >
+                                <Form.Control defaultValue={"No"} />
+                              </Form.Group>
+                            </td>
+                          </tr>
+                          <tr> 
+                            <td>SGA %</td>
+                            <td className="valueArea lightBlue">
+                              <Form.Group
+                                controlId="companyCode"
+                                className="form-group"
+                              >
+                                <Form.Control defaultValue={"6.0%"} />
+                              </Form.Group>
+                            </td>
+                            <td>Productivity Giveback %</td>
+                            <td className="valueArea lightBlue">
+                              <Form.Group
+                                controlId="companyCode"
+                                className="form-group"
+                              >
+                                <Form.Control defaultValue={"2.00%"} />
+                              </Form.Group>
+                            </td>
+                          </tr>
+                          <tr> 
+                            <td>PROFIT %</td>
+                            <td className="valueArea lightBlue">
+                              <Form.Group
+                                controlId="companyCode"
+                                className="form-group"
+                              >
+                                <Form.Control defaultValue={"50.0%"} />
+                              </Form.Group>
+                            </td>
+                            <td>YoY Based on</td>
+                            <td className="valueArea bg-dark-blue">
+                              <Form.Group
+                                controlId="companyCode"
+                                className="form-group"
+                              >
+                                <Form.Control defaultValue={"VA Only"} />
+                              </Form.Group>
+                            </td>
+                          </tr>
+                          <tr> 
+                            <td>Sales Commission</td>
+                            <td className="valueArea lightBlue">
+                              <Form.Group
+                                controlId="companyCode"
+                                className="form-group"
+                              >
+                                <Form.Control defaultValue={"0.0%"} />
+                              </Form.Group>
+                            </td>
+                            <td>YoY Productivity Years</td>
+                            <td className="valueArea bg-dark-blue">
+                              <Form.Group
+                                controlId="companyCode"
+                                className="form-group"
+                              >
+                                <Form.Control defaultValue={"0"} />
+                              </Form.Group>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
 
             </div>
           </div>

@@ -538,6 +538,31 @@ nav {
     }
 }
 
+.table-responsive {
+    /* width */
+    &::-webkit-scrollbar {
+        width: 2px;
+        height: 2px;
+    }
+
+    /* Track */
+    &::-webkit-scrollbar-track {
+        background: #999;
+    }
+
+    /* Handle */
+    &::-webkit-scrollbar-thumb {
+        background: #025b7d;
+    }
+
+    /* Handle on hover */
+    &::-webkit-scrollbar-thumb:hover {
+        background: #555;
+    }
+}
+
+
+
 @media (max-width: 1399px) {
     .verticalForm .verticalFormSingle form .form-group .form-label {
         min-height: 31px;

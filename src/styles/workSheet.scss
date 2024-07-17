@@ -23,7 +23,7 @@
             border-bottom-color: #999;
             font-size: 12px;
             vertical-align: middle;
-            padding: 5px 10px;
+            padding: 5px;
             &:nth-child(even) {
                 background: #eef7ff;
                 border-right: 2px solid #989898;
@@ -96,19 +96,17 @@
         }
     }
 }
-.worksheetTable {
-    .priceInput {
-        position: relative;
-        &::before {
-            position: absolute;
-            content: "$";
-            left: 6px;
-            top: 5px;
-        }
-        .form-control {
-            text-align: right;
-            padding-left: 20px !important;
-        }
+.priceInput {
+    position: relative;
+    &::before {
+        position: absolute;
+        content: "$";
+        left: 6px;
+        top: 5px;
+    }
+    .form-control {
+        text-align: right;
+        padding-left: 20px !important;
     }
 }
 .datePiker input.form-control {
@@ -288,8 +286,41 @@ table {
     background: #eef7ff !important;
     .form-group {
         .form-control {
+            color: #333 !important;
             background: none !important;
             border: none !important;
         }
     }
+}
+.bg-medium-blue {
+    background: rgba(0, 112, 155, 0.8196078431) !important;
+    .form-group {
+        .form-control {
+            color: #fff !important;
+            background: none !important;
+            border: none !important;
+        }
+    }
+}
+.bg-dark-blue {
+    background: #025b7d !important;
+    .form-group {
+        .form-control {
+            color: #fff !important;
+            background: none !important;
+            border: none !important;
+        }
+    }
+}
+.totlaHead {
+    font-size: 12px;
+    margin: 0;
+}
+.text-right {
+    text-align: right !important;
+}
+.form-label-text {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
