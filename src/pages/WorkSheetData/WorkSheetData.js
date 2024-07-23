@@ -2191,12 +2191,12 @@ const WorkSheetData = () => {
                               </Form.Group>
                             </td>
                             <td>YoY Productivity</td>
-                            <td className="valueArea bg-dark-blue">
-                              <Form.Group
-                                controlId="companyCode"
-                                className="form-group"
-                              >
-                                <Form.Control defaultValue={"No"} />
+                            <td className="valueArea bg-dark-blue selectTd">
+                              <Form.Group controlId="partNumber" className="form-group">
+                                <Form.Select className="form-control">
+                                  <option>No</option>
+                                  <option>Yes</option>
+                                </Form.Select>
                               </Form.Group>
                             </td>
                           </tr>
@@ -2231,12 +2231,12 @@ const WorkSheetData = () => {
                               </Form.Group>
                             </td>
                             <td>YoY Based on</td>
-                            <td className="valueArea bg-dark-blue">
-                              <Form.Group
-                                controlId="companyCode"
-                                className="form-group"
-                              >
-                                <Form.Control defaultValue={"VA Only"} />
+                            <td className="valueArea bg-dark-blue selectTd">
+                              <Form.Group controlId="partNumber" className="form-group">
+                                <Form.Select className="form-control">
+                                  <option>Piece Price</option>
+                                  <option>VA Only</option>
+                                </Form.Select>
                               </Form.Group>
                             </td>
                           </tr>
@@ -2251,12 +2251,17 @@ const WorkSheetData = () => {
                               </Form.Group>
                             </td>
                             <td>YoY Productivity Years</td>
-                            <td className="valueArea bg-dark-blue">
-                              <Form.Group
-                                controlId="companyCode"
-                                className="form-group"
-                              >
-                                <Form.Control defaultValue={"0"} />
+                            <td className="valueArea bg-dark-blue selectTd">
+                              <Form.Group controlId="partNumber" className="form-group">
+                                <Form.Select className="form-control">
+                                  <option>1</option>
+                                  <option>2</option>
+                                  <option>3</option>
+                                  <option>4</option>
+                                  <option>5</option>
+                                  <option>6</option>
+                                  <option>7</option>
+                                </Form.Select>
                               </Form.Group>
                             </td>
                           </tr>
@@ -2265,6 +2270,1257 @@ const WorkSheetData = () => {
                     </div>
                   </div>
                 </div>
+              </div>
+
+              <div className="worksheetSingle">
+                <div className="worksheetHeader">
+                  <h2 className='page_heading'>Price Break Down</h2>
+                </div>
+                <div className="table-responsive">
+                  <table className="verticalTable">
+                    <thead>
+                      <tr>
+                        <th className="max-column"></th>
+                        <th className="mid-column"></th>
+                        <th className="mid-column"></th>
+                        <th className="mid-column">VA Only Price</th>
+                        <th className="mid-column">Piece Price</th>
+                        <th className="min-column">1</th>
+                        <th className="min-column"></th>
+                        <th className="min-column"></th>
+                        <th className="min-column"></th>
+                        <th className="min-column">0</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+
+                      <tr> 
+                        <td>R/M</td>
+                        <td className="valueArea lightBlue">
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group priceInput"
+                          >
+                            <Form.Control defaultValue={"11.707"} />
+                          </Form.Group>
+                        </td>
+                        <td>Year 1 Price</td>
+                        <td className="valueArea lightBlue">
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group priceInput"
+                          >
+                            <Form.Control defaultValue={"22.002"} />
+                          </Form.Group>
+                        </td>
+                        <td className="valueArea lightBlue">
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group priceInput"
+                          >
+                            <Form.Control defaultValue={"22.002"} />
+                          </Form.Group>
+                        </td>
+                        <td className="valueArea lightBlue">
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group priceInput"
+                          >
+                            <Form.Control defaultValue={"22.002"} />
+                          </Form.Group>
+                        </td>
+                        <td className="valueArea lightBlue">
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group"
+                          >
+                            <Form.Control defaultValue={"1"} />
+                          </Form.Group>
+                        </td>
+                        <td className="valueArea lightBlue">
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group"
+                          >
+                            <Form.Control defaultValue={"1"} />
+                          </Form.Group>
+                        </td>
+                        <td>Yr 1</td>
+                        <td></td>
+                      </tr>
+
+                      <tr> 
+                        <td>Purchased Components</td>
+                        <td className="valueArea lightBlue">
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group priceInput"
+                          >
+                            <Form.Control defaultValue={"11.707"} />
+                          </Form.Group>
+                        </td>
+                        <td>Year 2 Price</td>
+                        <td className="valueArea lightBlue">
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group priceInput"
+                          >
+                            <Form.Control defaultValue={"22.002"} />
+                          </Form.Group>
+                        </td>
+                        <td className="valueArea lightBlue">
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group priceInput"
+                          >
+                            <Form.Control defaultValue={"22.002"} />
+                          </Form.Group>
+                        </td>
+                        <td className="valueArea lightBlue">
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group priceInput"
+                          >
+                            <Form.Control defaultValue={"22.002"} />
+                          </Form.Group>
+                        </td>
+                        <td className="valueArea lightBlue">
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group"
+                          >
+                            <Form.Control defaultValue={"1"} />
+                          </Form.Group>
+                        </td>
+                        <td className="valueArea lightBlue">
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group"
+                          >
+                            <Form.Control defaultValue={"1"} />
+                          </Form.Group>
+                        </td>
+                        <td>Yr 2</td>
+                        <td></td>
+                      </tr>
+                      
+                      <tr> 
+                        <td>Value Add</td>
+                        <td className="valueArea lightBlue">
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group priceInput"
+                          >
+                            <Form.Control defaultValue={"11.707"} />
+                          </Form.Group>
+                        </td>
+                        <td>Year 3 Price</td>
+                        <td className="valueArea lightBlue">
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group priceInput"
+                          >
+                            <Form.Control defaultValue={"22.002"} />
+                          </Form.Group>
+                        </td>
+                        <td className="valueArea lightBlue">
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group priceInput"
+                          >
+                            <Form.Control defaultValue={"22.002"} />
+                          </Form.Group>
+                        </td>
+                        <td className="valueArea lightBlue">
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group priceInput"
+                          >
+                            <Form.Control defaultValue={"22.002"} />
+                          </Form.Group>
+                        </td>
+                        <td className="valueArea lightBlue">
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group"
+                          >
+                            <Form.Control defaultValue={"1"} />
+                          </Form.Group>
+                        </td>
+                        <td className="valueArea lightBlue">
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group"
+                          >
+                            <Form.Control defaultValue={"1"} />
+                          </Form.Group>
+                        </td>
+                        <td>Yr 3</td>
+                        <td></td>
+                      </tr>
+
+                      <tr> 
+                        <td className="color-red"><strong>COGS</strong></td>
+                        <td className="valueArea lightBlue">
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group priceInput redColorInput">
+                            <Form.Control defaultValue={"11.707"} />
+                          </Form.Group>
+                        </td>
+                        <td>Year 1 Price</td>
+                        <td className="valueArea lightBlue">
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group priceInput"
+                          >
+                            <Form.Control defaultValue={"22.002"} />
+                          </Form.Group>
+                        </td>
+                        <td className="valueArea lightBlue">
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group priceInput"
+                          >
+                            <Form.Control defaultValue={"22.002"} />
+                          </Form.Group>
+                        </td>
+                        <td className="valueArea lightBlue">
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group priceInput"
+                          >
+                            <Form.Control defaultValue={"22.002"} />
+                          </Form.Group>
+                        </td>
+                        <td className="valueArea lightBlue">
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group"
+                          >
+                            <Form.Control defaultValue={"1"} />
+                          </Form.Group>
+                        </td>
+                        <td className="valueArea lightBlue">
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group"
+                          >
+                            <Form.Control defaultValue={"1"} />
+                          </Form.Group>
+                        </td>
+                        <td>Yr 1</td>
+                        <td></td>
+                      </tr>
+                      
+                      <tr> 
+                        <td>R/M</td>
+                        <td className="valueArea lightBlue">
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group priceInput"
+                          >
+                            <Form.Control defaultValue={"11.707"} />
+                          </Form.Group>
+                        </td>
+                        <td>Year 4 Price</td>
+                        <td className="valueArea lightBlue">
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group priceInput"
+                          >
+                            <Form.Control defaultValue={"22.002"} />
+                          </Form.Group>
+                        </td>
+                        <td className="valueArea lightBlue">
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group priceInput"
+                          >
+                            <Form.Control defaultValue={"22.002"} />
+                          </Form.Group>
+                        </td>
+                        <td className="valueArea lightBlue">
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group priceInput"
+                          >
+                            <Form.Control defaultValue={"22.002"} />
+                          </Form.Group>
+                        </td>
+                        <td className="valueArea lightBlue">
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group"
+                          >
+                            <Form.Control defaultValue={"1"} />
+                          </Form.Group>
+                        </td>
+                        <td className="valueArea lightBlue">
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group"
+                          >
+                            <Form.Control defaultValue={"1"} />
+                          </Form.Group>
+                        </td>
+                        <td>Yr 1</td>
+                        <td></td>
+                      </tr>
+
+                      <tr> 
+                        <td>R/M</td>
+                        <td className="valueArea lightBlue">
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group priceInput"
+                          >
+                            <Form.Control defaultValue={"11.707"} />
+                          </Form.Group>
+                        </td>
+                        <td>Year 1 Price</td>
+                        <td className="valueArea lightBlue">
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group priceInput"
+                          >
+                            <Form.Control defaultValue={"22.002"} />
+                          </Form.Group>
+                        </td>
+                        <td className="valueArea lightBlue">
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group priceInput"
+                          >
+                            <Form.Control defaultValue={"22.002"} />
+                          </Form.Group>
+                        </td>
+                        <td className="valueArea lightBlue">
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group priceInput"
+                          >
+                            <Form.Control defaultValue={"22.002"} />
+                          </Form.Group>
+                        </td>
+                        <td className="valueArea lightBlue">
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group"
+                          >
+                            <Form.Control defaultValue={"1"} />
+                          </Form.Group>
+                        </td>
+                        <td className="valueArea lightBlue">
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group"
+                          >
+                            <Form.Control defaultValue={"1"} />
+                          </Form.Group>
+                        </td>
+                        <td>Yr 1</td>
+                        <td></td>
+                      </tr>
+                      
+                      <tr> 
+                        <td>R/M</td>
+                        <td className="valueArea lightBlue">
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group priceInput"
+                          >
+                            <Form.Control defaultValue={"11.707"} />
+                          </Form.Group>
+                        </td>
+                        <td>Year 1 Price</td>
+                        <td className="valueArea lightBlue">
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group priceInput"
+                          >
+                            <Form.Control defaultValue={"22.002"} />
+                          </Form.Group>
+                        </td>
+                        <td className="valueArea lightBlue">
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group priceInput"
+                          >
+                            <Form.Control defaultValue={"22.002"} />
+                          </Form.Group>
+                        </td>
+                        <td className="valueArea lightBlue">
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group priceInput"
+                          >
+                            <Form.Control defaultValue={"22.002"} />
+                          </Form.Group>
+                        </td>
+                        <td className="valueArea lightBlue">
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group"
+                          >
+                            <Form.Control defaultValue={"1"} />
+                          </Form.Group>
+                        </td>
+                        <td className="valueArea lightBlue">
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group"
+                          >
+                            <Form.Control defaultValue={"1"} />
+                          </Form.Group>
+                        </td>
+                        <td>Yr 1</td>
+                        <td></td>
+                      </tr>
+
+                      <tr> 
+                        <td>R/M</td>
+                        <td className="valueArea lightBlue">
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group priceInput"
+                          >
+                            <Form.Control defaultValue={"11.707"} />
+                          </Form.Group>
+                        </td>
+                        <td>Year 1 Price</td>
+                        <td className="valueArea lightBlue">
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group priceInput"
+                          >
+                            <Form.Control defaultValue={"22.002"} />
+                          </Form.Group>
+                        </td>
+                        <td className="valueArea lightBlue">
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group priceInput"
+                          >
+                            <Form.Control defaultValue={"22.002"} />
+                          </Form.Group>
+                        </td>
+                        <td className="valueArea lightBlue">
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group priceInput"
+                          >
+                            <Form.Control defaultValue={"22.002"} />
+                          </Form.Group>
+                        </td>
+                        <td className="valueArea lightBlue">
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group"
+                          >
+                            <Form.Control defaultValue={"1"} />
+                          </Form.Group>
+                        </td>
+                        <td className="valueArea lightBlue">
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group"
+                          >
+                            <Form.Control defaultValue={"1"} />
+                          </Form.Group>
+                        </td>
+                        <td>Yr 1</td>
+                        <td></td>
+                      </tr>
+
+                      <tr> 
+                        <td className="totalTD yellow_bg"><strong>Total</strong></td>
+                        <td className="valueArea yellow_bg totalTD">
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group priceInput"
+                          >
+                            <Form.Control defaultValue={"11.707"} />
+                          </Form.Group>
+                        </td>
+                        <td>Year 9 Price</td>
+                        <td className="valueArea lightBlue">
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group priceInput"
+                          >
+                            <Form.Control defaultValue={"22.002"} />
+                          </Form.Group>
+                        </td>
+                        <td className="valueArea lightBlue">
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group priceInput"
+                          >
+                            <Form.Control defaultValue={"22.002"} />
+                          </Form.Group>
+                        </td>
+                        <td className="valueArea lightBlue">
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group priceInput"
+                          >
+                            <Form.Control defaultValue={"22.002"} />
+                          </Form.Group>
+                        </td>
+                        <td className="valueArea lightBlue">
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group"
+                          >
+                            <Form.Control defaultValue={"1"} />
+                          </Form.Group>
+                        </td>
+                        <td className="valueArea lightBlue">
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group"
+                          >
+                            <Form.Control defaultValue={"1"} />
+                          </Form.Group>
+                        </td>
+                        <td>Yr 9</td>
+                        <td></td>
+                      </tr>
+
+                      <tr> 
+                        <td className="yellow_bg">Raw Material %</td>
+                        <td className="valueArea yellow_bg">
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group transparent-input"
+                          >
+                            <Form.Control defaultValue={"53.2%"} />
+                          </Form.Group>
+                        </td>
+                        <td>Year 10 Price</td>
+                        <td className="valueArea lightBlue">
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group priceInput"
+                          >
+                            <Form.Control defaultValue={"22.002"} />
+                          </Form.Group>
+                        </td>
+                        <td className="valueArea lightBlue">
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group priceInput"
+                          >
+                            <Form.Control defaultValue={"22.002"} />
+                          </Form.Group>
+                        </td>
+                        <td className="valueArea lightBlue">
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group priceInput"
+                          >
+                            <Form.Control defaultValue={"22.002"} />
+                          </Form.Group>
+                        </td>
+                        <td className="valueArea lightBlue">
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group"
+                          >
+                            <Form.Control defaultValue={"1"} />
+                          </Form.Group>
+                        </td>
+                        <td className="valueArea lightBlue">
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group"
+                          >
+                            <Form.Control defaultValue={"1"} />
+                          </Form.Group>
+                        </td>
+                        <td>Yr 10</td>
+                        <td></td>
+                      </tr>
+
+                      <tr> 
+                        <td className="yellow_bg">Contribution Margin</td>
+                        <td className="valueArea yellow_bg">
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group transparent-input"
+                          >
+                            <Form.Control defaultValue={"19.9%"} />
+                          </Form.Group>
+                        </td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+
+                      <tr> 
+                        <td className="yellow_bg">Profit Margin (Starting)</td>
+                        <td className="valueArea yellow_bg">
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group transparent-input"
+                          >
+                            <Form.Control defaultValue={"15.1%"} />
+                          </Form.Group>
+                        </td>
+                        <td colSpan={2} className="text-right">Price per pound</td>
+                        <td className="valueArea lightBlue">
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group priceInput"
+                          >
+                            <Form.Control defaultValue={"22.002"} />
+                          </Form.Group>
+                        </td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+
+                      <tr> 
+                        <td className="yellow_bg">Profit Margin (After YoY)</td>
+                        <td className="valueArea yellow_bg">
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group transparent-input"
+                          >
+                            <Form.Control defaultValue={"15.1%"} />
+                          </Form.Group>
+                        </td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+
+              <div className="worksheetSingle">
+                <div className="worksheetHeader">
+                  <h2 className='page_heading'>Price Break Down</h2>
+                </div>
+                <div className="table-responsive">
+                  <table className="verticalTable">
+                    <thead>
+                      <tr>
+                        <th colSpan={3} style={{textAlign: 'center', fontSize: 12}}>Prototype Tooling Costs</th>
+                        <th colSpan={4} style={{textAlign: 'center', fontSize: 12}}>Production Tooling Costs</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td style={{textAlign: 'center', width: 250}}><strong>Tooling</strong></td>
+                        <td style={{width: 60, textAlign: 'center'}}><strong>Qty</strong></td>
+                        <td style={{textAlign: 'center'}}><strong>Price</strong></td>
+                        <td style={{textAlign: 'center'}}><strong>Total $</strong></td>
+                        <td style={{width: 60, textAlign: 'center'}}><strong>Qty</strong></td>
+                        <td style={{textAlign: 'center'}}><strong>Price</strong></td>
+                        <td style={{textAlign: 'center'}}><strong>Total $</strong></td>
+                      </tr>
+
+                      <tr>
+                        <td style={{textAlign: 'right'}}>Roll tooling</td>
+                        <td>
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group"
+                          >
+                            <Form.Control style={{textAlign: 'center'}} defaultValue={""} />
+                          </Form.Group>
+                        </td>
+                        <td className="valueArea lightBlue">
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group priceInput"
+                          >
+                            <Form.Control defaultValue={"10,000"} />
+                          </Form.Group>
+                        </td>
+                        <td className="valueArea lightBlue">
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group priceInput"
+                          >
+                            <Form.Control defaultValue={"-"} />
+                          </Form.Group>
+                        </td>
+                        <td>
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group"
+                          >
+                            <Form.Control style={{textAlign: 'center'}} defaultValue={"1"} />
+                          </Form.Group>
+                        </td>
+                        <td className="valueArea lightBlue">
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group priceInput"
+                          >
+                            <Form.Control defaultValue={"10,000"} />
+                          </Form.Group>
+                        </td>
+                        <td className="valueArea lightBlue">
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group priceInput"
+                          >
+                            <Form.Control defaultValue={"10,000"} />
+                          </Form.Group>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td style={{textAlign: 'right'}}>Roll tooling</td>
+                        <td>
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group"
+                          >
+                            <Form.Control style={{textAlign: 'center'}} defaultValue={""} />
+                          </Form.Group>
+                        </td>
+                        <td className="valueArea lightBlue">
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group priceInput"
+                          >
+                            <Form.Control defaultValue={"10,000"} />
+                          </Form.Group>
+                        </td>
+                        <td className="valueArea lightBlue">
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group priceInput"
+                          >
+                            <Form.Control defaultValue={"-"} />
+                          </Form.Group>
+                        </td>
+                        <td>
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group"
+                          >
+                            <Form.Control style={{textAlign: 'center'}} defaultValue={"1"} />
+                          </Form.Group>
+                        </td>
+                        <td className="valueArea lightBlue">
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group priceInput"
+                          >
+                            <Form.Control defaultValue={"10,000"} />
+                          </Form.Group>
+                        </td>
+                        <td className="valueArea lightBlue">
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group priceInput"
+                          >
+                            <Form.Control defaultValue={"10,000"} />
+                          </Form.Group>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td style={{textAlign: 'right'}}>Roll tooling</td>
+                        <td>
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group"
+                          >
+                            <Form.Control style={{textAlign: 'center'}} defaultValue={""} />
+                          </Form.Group>
+                        </td>
+                        <td className="valueArea lightBlue">
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group priceInput"
+                          >
+                            <Form.Control defaultValue={"10,000"} />
+                          </Form.Group>
+                        </td>
+                        <td className="valueArea lightBlue">
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group priceInput"
+                          >
+                            <Form.Control defaultValue={"-"} />
+                          </Form.Group>
+                        </td>
+                        <td>
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group"
+                          >
+                            <Form.Control style={{textAlign: 'center'}} defaultValue={"1"} />
+                          </Form.Group>
+                        </td>
+                        <td className="valueArea lightBlue">
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group priceInput"
+                          >
+                            <Form.Control defaultValue={"10,000"} />
+                          </Form.Group>
+                        </td>
+                        <td className="valueArea lightBlue">
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group priceInput"
+                          >
+                            <Form.Control defaultValue={"10,000"} />
+                          </Form.Group>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td style={{textAlign: 'right'}}>Roll tooling</td>
+                        <td>
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group"
+                          >
+                            <Form.Control style={{textAlign: 'center'}} defaultValue={""} />
+                          </Form.Group>
+                        </td>
+                        <td className="valueArea lightBlue">
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group priceInput"
+                          >
+                            <Form.Control defaultValue={"10,000"} />
+                          </Form.Group>
+                        </td>
+                        <td className="valueArea lightBlue">
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group priceInput"
+                          >
+                            <Form.Control defaultValue={"-"} />
+                          </Form.Group>
+                        </td>
+                        <td>
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group"
+                          >
+                            <Form.Control style={{textAlign: 'center'}} defaultValue={"1"} />
+                          </Form.Group>
+                        </td>
+                        <td className="valueArea lightBlue">
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group priceInput"
+                          >
+                            <Form.Control defaultValue={"10,000"} />
+                          </Form.Group>
+                        </td>
+                        <td className="valueArea lightBlue">
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group priceInput"
+                          >
+                            <Form.Control defaultValue={"10,000"} />
+                          </Form.Group>
+                        </td>
+                      </tr>                  
+
+                      <tr>
+                        <td style={{textAlign: 'right'}}>Roll tooling</td>
+                        <td>
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group"
+                          >
+                            <Form.Control style={{textAlign: 'center'}} defaultValue={""} />
+                          </Form.Group>
+                        </td>
+                        <td className="valueArea lightBlue">
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group priceInput"
+                          >
+                            <Form.Control defaultValue={"10,000"} />
+                          </Form.Group>
+                        </td>
+                        <td className="valueArea lightBlue">
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group priceInput"
+                          >
+                            <Form.Control defaultValue={"-"} />
+                          </Form.Group>
+                        </td>
+                        <td>
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group"
+                          >
+                            <Form.Control style={{textAlign: 'center'}} defaultValue={"1"} />
+                          </Form.Group>
+                        </td>
+                        <td className="valueArea lightBlue">
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group priceInput"
+                          >
+                            <Form.Control defaultValue={"10,000"} />
+                          </Form.Group>
+                        </td>
+                        <td className="valueArea lightBlue">
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group priceInput"
+                          >
+                            <Form.Control defaultValue={"10,000"} />
+                          </Form.Group>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td style={{textAlign: 'right'}}>Roll tooling</td>
+                        <td>
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group"
+                          >
+                            <Form.Control style={{textAlign: 'center'}} defaultValue={""} />
+                          </Form.Group>
+                        </td>
+                        <td className="valueArea lightBlue">
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group priceInput"
+                          >
+                            <Form.Control defaultValue={"10,000"} />
+                          </Form.Group>
+                        </td>
+                        <td className="valueArea lightBlue">
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group priceInput"
+                          >
+                            <Form.Control defaultValue={"-"} />
+                          </Form.Group>
+                        </td>
+                        <td>
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group"
+                          >
+                            <Form.Control style={{textAlign: 'center'}} defaultValue={"1"} />
+                          </Form.Group>
+                        </td>
+                        <td className="valueArea lightBlue">
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group priceInput"
+                          >
+                            <Form.Control defaultValue={"10,000"} />
+                          </Form.Group>
+                        </td>
+                        <td className="valueArea lightBlue">
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group priceInput"
+                          >
+                            <Form.Control defaultValue={"10,000"} />
+                          </Form.Group>
+                        </td>
+                      </tr>
+                      
+                      <tr>
+                        <td style={{textAlign: 'right'}}>Roll tooling</td>
+                        <td>
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group"
+                          >
+                            <Form.Control style={{textAlign: 'center'}} defaultValue={""} />
+                          </Form.Group>
+                        </td>
+                        <td className="valueArea lightBlue">
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group priceInput"
+                          >
+                            <Form.Control defaultValue={"10,000"} />
+                          </Form.Group>
+                        </td>
+                        <td className="valueArea lightBlue">
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group priceInput"
+                          >
+                            <Form.Control defaultValue={"-"} />
+                          </Form.Group>
+                        </td>
+                        <td>
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group"
+                          >
+                            <Form.Control style={{textAlign: 'center'}} defaultValue={"1"} />
+                          </Form.Group>
+                        </td>
+                        <td className="valueArea lightBlue">
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group priceInput"
+                          >
+                            <Form.Control defaultValue={"10,000"} />
+                          </Form.Group>
+                        </td>
+                        <td className="valueArea lightBlue">
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group priceInput"
+                          >
+                            <Form.Control defaultValue={"10,000"} />
+                          </Form.Group>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td style={{textAlign: 'right'}}>Roll tooling</td>
+                        <td>
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group"
+                          >
+                            <Form.Control style={{textAlign: 'center'}} defaultValue={""} />
+                          </Form.Group>
+                        </td>
+                        <td className="valueArea lightBlue">
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group priceInput"
+                          >
+                            <Form.Control defaultValue={"10,000"} />
+                          </Form.Group>
+                        </td>
+                        <td className="valueArea lightBlue">
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group priceInput"
+                          >
+                            <Form.Control defaultValue={"-"} />
+                          </Form.Group>
+                        </td>
+                        <td>
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group"
+                          >
+                            <Form.Control style={{textAlign: 'center'}} defaultValue={"1"} />
+                          </Form.Group>
+                        </td>
+                        <td className="valueArea lightBlue">
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group priceInput"
+                          >
+                            <Form.Control defaultValue={"10,000"} />
+                          </Form.Group>
+                        </td>
+                        <td className="valueArea lightBlue">
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group priceInput"
+                          >
+                            <Form.Control defaultValue={"10,000"} />
+                          </Form.Group>
+                        </td>
+                      </tr>
+                      
+                      <tr>
+                        <td style={{textAlign: 'right'}}>Roll tooling</td>
+                        <td>
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group"
+                          >
+                            <Form.Control style={{textAlign: 'center'}} defaultValue={""} />
+                          </Form.Group>
+                        </td>
+                        <td className="valueArea lightBlue">
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group priceInput"
+                          >
+                            <Form.Control defaultValue={"10,000"} />
+                          </Form.Group>
+                        </td>
+                        <td className="valueArea lightBlue">
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group priceInput"
+                          >
+                            <Form.Control defaultValue={"-"} />
+                          </Form.Group>
+                        </td>
+                        <td>
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group"
+                          >
+                            <Form.Control style={{textAlign: 'center'}} defaultValue={"1"} />
+                          </Form.Group>
+                        </td>
+                        <td className="valueArea lightBlue">
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group priceInput"
+                          >
+                            <Form.Control defaultValue={"10,000"} />
+                          </Form.Group>
+                        </td>
+                        <td className="valueArea lightBlue">
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group priceInput"
+                          >
+                            <Form.Control defaultValue={"10,000"} />
+                          </Form.Group>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td style={{textAlign: 'right'}}>Roll tooling</td>
+                        <td>
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group"
+                          >
+                            <Form.Control style={{textAlign: 'center'}} defaultValue={""} />
+                          </Form.Group>
+                        </td>
+                        <td className="valueArea lightBlue">
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group priceInput"
+                          >
+                            <Form.Control defaultValue={"10,000"} />
+                          </Form.Group>
+                        </td>
+                        <td className="valueArea lightBlue">
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group priceInput"
+                          >
+                            <Form.Control defaultValue={"-"} />
+                          </Form.Group>
+                        </td>
+                        <td>
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group"
+                          >
+                            <Form.Control style={{textAlign: 'center'}} defaultValue={"1"} />
+                          </Form.Group>
+                        </td>
+                        <td className="valueArea lightBlue">
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group priceInput"
+                          >
+                            <Form.Control defaultValue={"10,000"} />
+                          </Form.Group>
+                        </td>
+                        <td className="valueArea lightBlue">
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group priceInput"
+                          >
+                            <Form.Control defaultValue={"10,000"} />
+                          </Form.Group>
+                        </td>
+                      </tr>
+
+                      <tr className="lastRow">
+                        <td colSpan={3} style={{textAlign: 'right'}}><strong>Total</strong></td>
+                        <td className="totalTD">
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group priceInput"
+                          >
+                            <Form.Control defaultValue={"11.707"} />
+                          </Form.Group>
+                        </td>
+                        <td colSpan={2} style={{textAlign: 'right'}}><strong>Total</strong></td>
+                        <td className="totalTD">
+                          <Form.Group
+                            controlId="companyCode"
+                            className="form-group priceInput"
+                          >
+                            <Form.Control defaultValue={"11.707"} />
+                          </Form.Group>
+                        </td>
+                      </tr>
+                      
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+
+              <div className="worksheetSingle">
+                <table className="conclusionTable">
+                  <thead>
+                    <tr>
+                      <th colSpan={2}>Approvals</th>
+                      <th style={{width: 150, textAlign: 'center'}}>Date</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td style={{width: 200}}>Responsible Engineer:</td>
+                      <td className="v-bottom">
+                        <div className="bottomBorder"></div>
+                      </td>
+                      <td className="v-bottom">
+                        <div className="bottomBorder"></div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td style={{width: 200}}>Engineering Manager:</td>
+                      <td className="v-bottom">
+                        <div className="bottomBorder"></div>
+                      </td>
+                      <td className="v-bottom">
+                        <div className="bottomBorder"></div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td style={{width: 200}}>General Manager:</td>
+                      <td className="v-bottom">
+                        <div className="bottomBorder"></div>
+                      </td>
+                      <td className="v-bottom">
+                        <div className="bottomBorder"></div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
               </div>
 
             </div>

@@ -47,52 +47,56 @@
         }
         td.selectTd {
             background: #025b7d;
-            .form-group {
-                position: relative;
-                &::before, &::after {
-                    position: absolute;
-                    content: "";
-                    pointer-events: none;
-                }
-                &::before {
-                    background: #025b7d;
-                    top: 0;
-                    right: 0;
-                    bottom: 0;
-                    height: calc(100% - 2px);
-                    width: 30px;
-                }
-                &::after {
-                    width: 12px;
-                    height: 12px;
-                    right: 0;
-                    top: 0px;
-                    border: 2px solid transparent;
-                    border-right-color: #fff;
-                    border-bottom-color: #fff;
-                    transform: rotate(45deg);
-                    -webkit-transform: rotate(45deg);
-                    -moz-transform: rotate(45deg);
-                    -ms-transform: rotate(45deg);
-                    -o-transform: rotate(45deg);
-                    border-radius: 3px;
-                    -webkit-border-radius: 3px;
-                    -moz-border-radius: 3px;
-                    -ms-border-radius: 3px;
-                    -o-border-radius: 3px;
-                }
-                select.form-control {
-                    color: #fff;
-                    border: none;
-                    background: none;
-                    option {
-                        color: #000 !important;
-                    }
-                }
-            }
         }
         td.dateTd {
             background: #9cccf2;
+        }
+    }
+}
+
+td.selectTd {
+    background: #025b7d;
+    .form-group {
+        position: relative;
+        &::before, &::after {
+            position: absolute;
+            content: "";
+            pointer-events: none;
+        }
+        &::before {
+            background: #025b7d;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            height: calc(100% - 2px);
+            width: 30px;
+        }
+        &::after {
+            width: 9px;
+            height: 9px;
+            right: 4px;
+            top: 8px;
+            border: 2px solid transparent;
+            border-right-color: #fff;
+            border-bottom-color: #fff;
+            transform: rotate(45deg);
+            -webkit-transform: rotate(45deg);
+            -moz-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+            -o-transform: rotate(45deg);
+            border-radius: 1px;
+            -webkit-border-radius: 1px;
+            -moz-border-radius: 1px;
+            -ms-border-radius: 1px;
+            -o-border-radius: 1px;
+}
+        select.form-control {
+            color: #fff;
+            border: none;
+            background: none;
+            option {
+                color: #000 !important;
+            }
         }
     }
 }
@@ -215,7 +219,7 @@ input[disabled] {
         margin: 0;
         .form-control {
             background: none;
-            border: 1px solid #dbdddb !important;
+            border: 1px solid #dbdddb;
             font-size: 11px;
             min-width: auto;
             padding: 0 5px;
@@ -276,6 +280,10 @@ table {
 .max-column {
     min-width: 150px;
 }
+.mid-column {
+    min-width: 125px;
+    max-width: 125px;
+}
 .min-column {
     min-width: 5%;
     max-width: 100px;
@@ -289,6 +297,14 @@ table {
             color: #333 !important;
             background: none !important;
             border: none !important;
+        }
+    }
+    .redColorInput {
+        &::before {
+            color: #f00 !important;
+        }
+        .form-control {
+            color: #f00 !important;
         }
     }
 }
@@ -323,4 +339,64 @@ table {
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+.color-red {
+    color: #f00 !important;
+}
+
+.yellow_bg {
+    background: #ffff90 !important;
+}
+.totalTD {
+    .form-group {
+        &::before {
+            font-weight: 700;
+        }
+        .form-control {
+            font-weight: 700;
+        }
+    }
+}
+.transparent-input {
+    .form-control {
+        background: none !important;
+        border: none !important;
+    }
+}
+
+.conclusionTable {
+    width: 100%;
+    thead {
+        tr {
+            th {
+                font-weight: initial;
+                white-space: nowrap;
+                border: 1px solid #ddd;
+                font-size: 13px;
+                vertical-align: middle;
+                padding: 5px 10px;
+                font-weight: 600;
+            }
+        }
+    }
+    tbody {
+        tr {
+            td {
+                font-weight: initial;
+                white-space: nowrap;
+                border: 1px solid #ddd;
+                font-size: 13px;
+                vertical-align: middle;
+                padding: 15px 10px 10px;
+                font-weight: 600;
+            }
+        }
+    }
+}
+.bottomBorder {
+    border-bottom: 2px solid #333;
+}
+.v-bottom {
+    vertical-align: bottom !important;
 }
