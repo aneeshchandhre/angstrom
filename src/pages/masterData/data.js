@@ -1,0 +1,17 @@
+export const jsonData = [
+    {id: 1, image: '/img/icons/masterDataIcon01.svg', title: 'Company Category'},
+    {id: 2, image: '/img/icons/masterDataIcon02.svg', title: 'Company'},
+    {id: 3, image: '/img/icons/masterDataIcon03.svg', title: 'User Management'},
+    {id: 4, image: '/img/icons/masterDataIcon04.svg', title: 'Meterial (Part)'},
+    {id: 5, image: '/img/icons/masterDataIcon05.svg', title: 'Operation'},
+    {id: 6, image: '/img/icons/masterDataIcon06.svg', title: 'Meterial Type'},
+    {id: 7, image: '/img/icons/masterDataIcon07.svg', title: 'Process'},
+    {id: 8, image: '/img/icons/masterDataIcon08.svg', title: 'Mechine'},
+    {id: 9, image: '/img/icons/masterDataIcon09.svg', title: 'Labor'},
+    {id: 10, image: '/img/icons/masterDataIcon10.svg', title: 'Tooling'},
+    {id: 11, image: '/img/icons/masterDataIcon11.svg', title: 'Customer'},
+    {id: 12, image: '/img/icons/masterDataIcon12.svg', title: 'Employee'},
+    {id: 13, image: '/img/icons/masterDataIcon13.svg', title: 'Metal/Alloy Grade'},
+    {id: 14, image: '/img/icons/masterDataIcon14.svg', title: 'Payment Terms'},
+    {id: 15, image: '/img/icons/masterDataIcon15.svg', title: 'Part Geometry'},
+]

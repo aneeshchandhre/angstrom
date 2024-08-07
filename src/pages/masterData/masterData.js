@@ -5,6 +5,8 @@ import Image from 'next/image';
 import Footer from '@/components/layout/footer';
 import Header from '@/components/layout/header';
 
+import { jsonData } from './data';
+import Menu from './Menu';
 
 const masterData = () => {
 
@@ -15,114 +17,9 @@ const masterData = () => {
                 <div className='page_wrapp'>
                     <h2 className='page_heading'>Master Data</h2>
                     <div className='subMenusWrapper'>
-                        <Link href='/' className='subMenu'>
-                            <span className='subMenuIcon'>
-                            <Image
-                                src="/img/icons/masterDataIcon01.svg"
-                                alt="Master Data Icon"
-                                className='masterDataIcon'
-                                width={25}
-                                height={22}
-                                priority
-                            />
-                            </span>
-                            <div className='subMenuContent'>
-                                Company Category
-                            </div>
-                        </Link>
-                        <Link href='./addCompany' className='subMenu'>
-                            <span className='subMenuIcon'>
-                            <Image
-                                src="/img/icons/masterDataIcon02.svg"
-                                alt="Master Data Icon"
-                                className='masterDataIcon'
-                                width={25}
-                                height={22}
-                                priority
-                            />
-                            </span>
-                            <div className='subMenuContent'>
-                                Company
-                            </div>
-                        </Link>
-                        <Link href='/' className='subMenu'>
-                            <span className='subMenuIcon'>
-                            <Image
-                                src="/img/icons/masterDataIcon03.svg"
-                                alt="Master Data Icon"
-                                className='masterDataIcon'
-                                width={25}
-                                height={22}
-                                priority
-                            />
-                            </span>
-                            <div className='subMenuContent'>User Management</div>
-                        </Link>
-                        <Link href='/' className='subMenu'>
-                            <span className='subMenuIcon'>
-                            <Image
-                                src="/img/icons/masterDataIcon04.svg"
-                                alt="Master Data Icon"
-                                className='masterDataIcon'
-                                width={25}
-                                height={22}
-                                priority
-                            />
-                            </span>
-                            <div className='subMenuContent'>Meterial(Part)</div>
-                        </Link>
-                        <Link href='/' className='subMenu'>
-                            <span className='subMenuIcon'>
-                            <Image
-                                src="/img/icons/masterDataIcon05.svg"
-                                alt="Master Data Icon"
-                                className='masterDataIcon'
-                                width={25}
-                                height={22}
-                                priority
-                            />
-                            </span>
-                            <div className='subMenuContent'>Operation</div>
-                        </Link>
-                        <Link href='/' className='subMenu'>
-                            <span className='subMenuIcon'>
-                            <Image
-                                src="/img/icons/masterDataIcon06.svg"
-                                alt="Master Data Icon"
-                                className='masterDataIcon'
-                                width={25}
-                                height={22}
-                                priority
-                            />
-                            </span>
-                            <div className='subMenuContent'>Meterial Type</div>
-                        </Link>
-                        <Link href='/' className='subMenu'>
-                            <span className='subMenuIcon'>
-                            <Image
-                                src="/img/icons/masterDataIcon07.svg"
-                                alt="Master Data Icon"
-                                className='masterDataIcon'
-                                width={25}
-                                height={22}
-                                priority
-                            />
-                            </span>
-                            <div className='subMenuContent'>Process</div>
-                        </Link>
-                        <Link href='/' className='subMenu'>
-                            <span className='subMenuIcon'>
-                            <Image
-                                src="/img/icons/masterDataIcon08.svg"
-                                alt="Master Data Icon"
-                                className='masterDataIcon'
-                                width={25}
-                                height={22}
-                                priority
-                            />
-                            </span>
-                            <div className='subMenuContent'>Machine</div>
-                        </Link>
+                        {jsonData.map((item) => (
+                            <Menu key={item.id} title={item.title} image={item.image} />
+                        ))}
                     </div>
                 </div>
             </div>
